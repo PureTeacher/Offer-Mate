@@ -130,7 +130,7 @@ export default {
         {
           id: 1,
           type: 'social',
-          text: "我感到孤独",
+          text: "在团队中，我常觉得自己被边缘化",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -141,7 +141,7 @@ export default {
         {
           id: 2,
           type: 'social',
-          text: "我感到被忽视",
+          text: "在工作交流里，我常觉得不被重视",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -152,7 +152,7 @@ export default {
         {
           id: 3,
           type: 'social',
-          text: "我感到与他人有联系",
+          text: "我能在团队中建立稳定连接",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -163,7 +163,7 @@ export default {
         {
           id: 4,
           type: 'social',
-          text: "我感到被理解",
+          text: "同事通常能理解我的表达意图",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -174,7 +174,7 @@ export default {
         {
           id: 5,
           type: 'social',
-          text: "我感到被排斥",
+          text: "我常感觉难以融入团队氛围",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -185,7 +185,7 @@ export default {
         {
           id: 6,
           type: 'social',
-          text: "我感到与他人亲近",
+          text: "我在工作中能找到值得信任的伙伴",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -196,7 +196,7 @@ export default {
         {
           id: 7,
           type: 'social',
-          text: "我感到被孤立",
+          text: "我在协作中常有孤军作战的感受",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -207,7 +207,7 @@ export default {
         {
           id: 8,
           type: 'social',
-          text: "我感到被接受",
+          text: "我的观点在团队中通常会被接纳",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -218,7 +218,7 @@ export default {
         {
           id: 9,
           type: 'social',
-          text: "我感到被冷落",
+          text: "我常觉得被同事有意无意忽视",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -229,7 +229,7 @@ export default {
         {
           id: 10,
           type: 'social',
-          text: "我感到被支持",
+          text: "遇到困难时，我能获得及时支持",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -240,7 +240,7 @@ export default {
         {
           id: 11,
           type: 'social',
-          text: "我感到被遗忘",
+          text: "我常觉得与团队节奏脱节",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -251,7 +251,7 @@ export default {
         {
           id: 12,
           type: 'social',
-          text: "我感到被关心",
+          text: "我能比较自然地发起职业社交",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -262,7 +262,7 @@ export default {
         {
           id: 13,
           type: 'social',
-          text: "我感到被疏远",
+          text: "跨部门沟通时，我常感到不自在",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -273,7 +273,7 @@ export default {
         {
           id: 14,
           type: 'social',
-          text: "我感到被重视",
+          text: "我能与同事保持舒适的沟通边界",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -284,7 +284,7 @@ export default {
         {
           id: 15,
           type: 'social',
-          text: "我感到被拒绝",
+          text: "在会议中，我常觉得自己没有存在感",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -295,7 +295,7 @@ export default {
         {
           id: 16,
           type: 'social',
-          text: "我感到被接纳",
+          text: "我愿意主动建立新的工作连接",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -306,7 +306,7 @@ export default {
         {
           id: 17,
           type: 'social',
-          text: "我感到被忽视",
+          text: "我常担心在协作中被误解",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -317,7 +317,7 @@ export default {
         {
           id: 18,
           type: 'social',
-          text: "我感到被理解",
+          text: "我能在团队中表达真实观点",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -328,7 +328,7 @@ export default {
         {
           id: 19,
           type: 'social',
-          text: "我感到被孤立",
+          text: "我常觉得缺少可以深度交流的同事",
           options: [
             { text: "从不", desc: "1分", score: 1 },
             { text: "很少", desc: "2分", score: 2 },
@@ -339,7 +339,7 @@ export default {
         {
           id: 20,
           type: 'social',
-          text: "我感到被支持",
+          text: "整体上，我对当前职场社交状态满意",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },

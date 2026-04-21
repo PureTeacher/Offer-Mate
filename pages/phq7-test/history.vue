@@ -22,22 +22,22 @@
         <view class="filter-item" 
               :class="{active: currentFilter === 'mood'}"
               @click="filterByType('mood')">
-          <text>😊 情绪</text>
+          <text>🧭 兴趣</text>
         </view>
         <view class="filter-item" 
               :class="{active: currentFilter === 'stress'}"
               @click="filterByType('stress')">
-          <text>😫 压力</text>
+          <text>⚡ 压力</text>
         </view>
         <view class="filter-item" 
               :class="{active: currentFilter === 'social'}"
               @click="filterByType('social')">
-          <text>👥 人际</text>
+          <text>🤝 协作</text>
         </view>
         <view class="filter-item" 
               :class="{active: currentFilter === 'sleep'}"
               @click="filterByType('sleep')">
-          <text>😴 睡眠</text>
+          <text>🎯 求职</text>
         </view>
       </scroll-view>
     </view>
@@ -47,7 +47,7 @@
       <view v-if="filteredResults.length === 0" class="empty-state">
         <text class="empty-emoji">📊</text>
         <text class="empty-text">暂无测评记录</text>
-        <text class="empty-desc">开始您的第一次心理测评吧</text>
+        <text class="empty-desc">开始您的第一次职业测评吧</text>
       </view>
       
       <view v-else>
@@ -747,3 +747,4 @@
   }
 }
 </style>
+

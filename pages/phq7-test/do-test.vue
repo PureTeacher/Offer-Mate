@@ -138,7 +138,7 @@ export default {
         {
           id: 1,
           type: 'mood',
-          text: "对做事缺乏兴趣或愉悦感",
+          text: "最近两周，你是否经常对职业目标感到迷茫",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -149,7 +149,7 @@ export default {
         {
           id: 2,
           type: 'mood',
-          text: "感到沮丧、抑郁或绝望",
+          text: "最近两周，你是否对学习或工作任务提不起兴趣",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -160,7 +160,7 @@ export default {
         {
           id: 3,
           type: 'mood',
-          text: "难以入睡或保持睡眠，或睡得太多",
+          text: "最近两周，你是否因求职或工作压力影响休息",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -171,7 +171,7 @@ export default {
         {
           id: 4,
           type: 'mood',
-          text: "感到疲劳或无精打采",
+          text: "最近两周，你是否常感到精力不足，难以高效完成任务",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -182,7 +182,7 @@ export default {
         {
           id: 5,
           type: 'mood',
-          text: "食欲不振或暴饮暴食",
+          text: "最近两周，你是否因为职业不确定性而食欲变化",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -193,7 +193,7 @@ export default {
         {
           id: 6,
           type: 'mood',
-          text: "感到自己不好——或者认为自己是失败者，或让自己或家人失望",
+          text: "最近两周，你是否频繁否定自己在职场中的能力",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -204,7 +204,7 @@ export default {
         {
           id: 7,
           type: 'mood',
-          text: "注意很难集中，例如阅读报纸或看电视",
+          text: "最近两周，你是否难以专注于简历、作品集或业务复盘",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -215,7 +215,7 @@ export default {
         {
           id: 8,
           type: 'mood',
-          text: "动作或说话速度缓慢到别人可察觉的程度，或正好相反——比平时更坐立不安或烦躁不安",
+          text: "最近两周，你是否明显行动迟缓或异常急躁",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -226,7 +226,7 @@ export default {
         {
           id: 9,
           type: 'mood',
-          text: "有希望自己死去或以某种方式伤害自己的想法",
+          text: "最近两周，你是否产生过“放弃职业努力”的念头",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },

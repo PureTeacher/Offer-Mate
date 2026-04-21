@@ -7,7 +7,7 @@
         <view class="guide-area">
             <text class="guide-emoji">☀️</text>
             <view class="guide-speech">
-                <text>Hi~ 我是你的心理助手小晴！\n请自行完成测评哦~</text>
+                <text>Hi~ 我是你的职业助手小晴！\n先做测评，再匹配导师哦~</text>
             </view>
         </view>
 
@@ -51,7 +51,7 @@
 
         <!-- 历史记录入口 -->
         <view class="history-entrance" @click="navToHistory">
-            <text>查看历史测评报告</text>
+            <text>查看历史测评记录</text>
             <text class="emoji">➡️</text>
         </view>
 
@@ -83,22 +83,22 @@ export default {
             currentTest: {},
             categories: [
                 {
-                    name: "情绪状态",
+                    name: "职业性格",
                     emoji: "😊",
                     type: "mood",
                 },
                 {
-                    name: "压力评估",
+                    name: "职场压力",
                     emoji: "😫",
                     type: "stress",
                 },
                 {
-                    name: "人际关系",
+                    name: "沟通协作",
                     emoji: "👥",
                     type: "social",
                 },
                 {
-                    name: "睡眠质量",
+                    name: "求职状态",
                     emoji: "😴",
                     type: "sleep",
                 },
@@ -106,8 +106,8 @@ export default {
             testList: [
                 {
                     id: "phq7",
-                    title: "抑郁症状筛查",
-                    description: "PHQ-7专业抑郁症状评估量表",
+                    title: "职业兴趣探索",
+                    description: "基于兴趣偏好的职业方向测评",
                     emoji: "😔",
                     questionCount: 9,
                     duration: 3,
@@ -115,12 +115,12 @@ export default {
                     path: "/pages/phq7-test/do-test",
                     isNew: false,
                     detailDescription:
-                        "本量表基于PHQ-7(Patient Health Questionnaire-7)开发，用于评估过去两周内抑郁症状的出现频率。包含7个问题，每个问题0-3分，总分0-21分。\n\n评分参考：\n0-4分：无明显症状\n5-9分：轻度抑郁\n10-14分：中度抑郁\n15-21分：重度抑郁",
+                        "本测评用于了解你的职业兴趣倾向，帮助识别更匹配的岗位方向。共7个问题，每题按符合程度评分。\n\n结果参考：\n0-4分：兴趣方向待探索\n5-9分：已形成初步偏好\n10-14分：方向较明确\n15-21分：方向非常清晰",
                 },
                 {
                     id: "gad7",
-                    title: "焦虑症状筛查",
-                    description: "GAD-7广泛性焦虑障碍量表",
+                    title: "职业决策清晰度",
+                    description: "评估职业目标与决策稳定性",
                     emoji: "😰",
                     path: "/pages/phq7-test/gad7",
                     questionCount: 7,
@@ -128,12 +128,12 @@ export default {
                     type: "mood",
                     isNew: true,
                     detailDescription:
-                        "GAD-7量表用于评估广泛性焦虑症状，包含7个问题，评估过去两周的情况。每个问题0-3分，总分0-21分。\n\n评分参考：\n0-4分：无明显焦虑\n5-9分：轻度焦虑\n10-14分：中度焦虑\n15-21分：重度焦虑",
+                        "本测评用于评估你在职业选择中的犹豫程度与决策状态，帮助你识别关键卡点。\n\n结果参考：\n0-4分：目标尚不清晰\n5-9分：有基础方向\n10-14分：方向较稳定\n15-21分：决策清晰且可执行",
                 },
                 {
                     id: "cpss",
-                    title: "感知压力量表",
-                    description: "CPSS中文版知觉压力量表",
+                    title: "职场压力评估",
+                    description: "评估近期工作与求职压力水平",
                     emoji: "😫",
                     questionCount: 14,
                     duration: 5,
@@ -141,12 +141,12 @@ export default {
                     path: "/pages/phq7-test/cpss",
                     isNew: false,
                     detailDescription:
-                        '感知压力量表（Perceived Stress Scale，PSS）由美国学者Cohen等编制，杨廷忠等2003年汉化，共14个条目，包含2维度，即紧张感和失控感。采用Likert5级计分法，"从不"至"总是"赋值为0～4分。总分0～56分，得分高低与个体感知压力水平呈正比。',
+                        '本测评用于识别你在工作、学习和求职阶段的压力水平，共14个条目，覆盖紧张感与掌控感两个维度。总分越高，表示压力感知越明显。',
                 },
                 {
                     id: "ucla",
-                    title: "UCLA孤独感量表",
-                    description: "UCLA孤独感量表评估",
+                    title: "职业社交舒适度",
+                    description: "评估团队协作与职场社交状态",
                     emoji: "😔",
                     questionCount: 20,
                     duration: 5,
@@ -154,12 +154,12 @@ export default {
                     path: "/pages/phq7-test/ucla",
                     isNew: false,
                     detailDescription:
-                        "UCLA孤独感量表（UCLA Loneliness Scale）由Russell等开发，用于评估个体的孤独感程度。量表包含20个题目，采用4点计分法，总分20-80分。",
+                        "本测评用于评估你在团队协作、同事沟通和职业社交中的舒适度，帮助你发现沟通优势与改进点。",
                 },
                 {
                     id: "its",
-                    title: "人际信任量表",
-                    description: "ITS人际信任量表评估",
+                    title: "团队信任与协作",
+                    description: "评估跨团队合作中的信任水平",
                     emoji: "🙂",
                     questionCount: 12,
                     duration: 4,
@@ -167,12 +167,12 @@ export default {
                     path: "/pages/phq7-test/its",
                     isNew: false,
                     detailDescription:
-                        "人际信任量表（Interpersonal Trust Scale，ITS）由Rotter开发，用于评估个体对他人的信任程度。量表包含12个题目，采用5点计分法，总分12-60分。",
+                        "本测评用于评估你在团队合作中的信任倾向和协作风格，帮助你优化沟通策略和协作方式。",
                 },
                 {
                     id: "psqi",
-                    title: "匹兹堡睡眠质量指数",
-                    description: "PSQI睡眠质量评估",
+                    title: "面试状态准备度",
+                    description: "评估面试阶段的节奏和状态管理",
                     emoji: "😴",
                     questionCount: 7,
                     duration: 3,
@@ -180,12 +180,12 @@ export default {
                     path: "/pages/phq7-test/psqi",
                     isNew: false,
                     detailDescription:
-                        "匹兹堡睡眠质量指数（Pittsburgh Sleep Quality Index，PSQI）由Buysse等开发，用于评估睡眠质量。量表包含7个维度，采用0-3分计分法，总分0-21分。",
+                        "本测评聚焦面试准备期的作息、精力与专注状态，帮助你建立更稳定的备战节奏。",
                 },
                 {
                     id: "sds",
-                    title: "睡眠障碍量表",
-                    description: "SDS睡眠障碍评估",
+                    title: "求职行动力评估",
+                    description: "评估简历投递与复盘执行效率",
                     emoji: "😵",
                     questionCount: 10,
                     duration: 4,
@@ -193,7 +193,7 @@ export default {
                     path: "/pages/phq7-test/sds",
                     isNew: false,
                     detailDescription:
-                        "睡眠障碍量表（Sleep Disorder Scale，SDS）用于评估各种睡眠障碍症状。量表包含10个题目，采用0-3分计分法，总分0-30分。",
+                        "本测评用于评估你在求职过程中的行动节奏与执行稳定性，帮助你建立可持续的投递与复盘习惯。",
                 },
             ],
         };
@@ -515,3 +515,4 @@ export default {
     }
 }
 </style>
+

@@ -117,13 +117,13 @@ export default {
                     expanded: false,
                 },
                 {
-                    question: "如何导出心理测试报告？",
-                    answer: '完成心理测试后，可以在结果页面点击"导出"按钮保存或分享测试报告。',
+                    question: "如何导出职业测评报告？",
+                    answer: '完成职业测评后，可在结果页面点击"导出"保存或分享报告。',
                     expanded: false,
                 },
                 {
-                    question: "心理咨询师如何预约？",
-                    answer: '在"心理咨询"模块选择咨询师后，选择合适的时间进行预约。咨询师会在确认后通过消息通知您。',
+                    question: "职业导师如何预约？",
+                    answer: '在"职业咨询"模块选择导师后，选择合适时间进行预约。导师确认后会通过消息通知您。',
                     expanded: false,
                 },
                 {
@@ -538,3 +538,4 @@ export default {
     }
 }
 </style>
+

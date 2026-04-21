@@ -4,11 +4,11 @@
     <!-- <view class="header">
       <view class="header-left">
         <text class="back-arrow" @click="goBack">⬅️</text>
-        <text class="header-title">预约咨询</text>
+        <text class="header-title">预约导师</text>
       </view>
     </view> -->
 
-    <!-- 医生信息卡片 -->
+    <!-- 导师信息卡片 -->
     <view class="doctor-card">
       <view class="doctor-info">
         <image :src="doctorInfo.avatar" class="doctor-avatar" mode="aspectFill"/>
@@ -86,13 +86,13 @@
           />
         </view>
 
-        <!-- 咨询内容 -->
+        <!-- 咨询目标 -->
         <view class="form-item">
-          <text class="form-label">咨询内容 <text class="required">*</text></text>
+          <text class="form-label">咨询目标 <text class="required">*</text></text>
           <textarea 
             class="form-textarea" 
             v-model="formData.content"
-            placeholder="请详细描述您希望咨询的问题或困扰，这将帮助医生更好地了解您的情况"
+            placeholder="请详细描述您希望咨询的职业问题或目标，这将帮助导师更好地了解您的需求"
             maxlength="500"
             :show-count="true"
           />
@@ -203,7 +203,7 @@ export default {
       doctorInfo: {
         id: 1,
         name: '李心怡',
-        title: '主任医师',
+        title: '首席职业导师',
         avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=doctor1&backgroundColor=b6e3f4',
         specialties: ['焦虑症', '抑郁症', '情感咨询']
       }
@@ -345,7 +345,7 @@ export default {
   },
   
   onLoad(options) {
-    // 从上一页传递医生信息
+    // 从上一页传递导师信息
     if (options.doctorId) {
       this.doctorInfo = {
         id: options.doctorId,
@@ -655,3 +655,4 @@ export default {
   }
 }
 </style>
+

@@ -46,7 +46,7 @@
                 <view class="help-card">
                     <text class="card-title">第三步：开始使用功能</text>
                     <text class="card-text">
-                        浏览心理测试、预约咨询师、查看健康数据等丰富功能。
+                        浏览职业测评、预约导师、查看成长记录等丰富功能。
                     </text>
                 </view>
             </view>
@@ -56,37 +56,37 @@
                 <text class="section-title">✨ 功能介绍</text>
 
                 <view class="help-card">
-                    <text class="card-title">心理评估测试</text>
+                    <text class="card-title">职业规划测评</text>
                     <text class="card-text">
-                        提供多种专业的心理评估工具，包括PHQ-7抑郁症评估、GAD-7焦虑症评估、心理应激指数(PSI)等权威测试，帮助您了解自己的心理状态。
+                        提供多种专业的职业评估工具，包括职业兴趣、职业决策、职场压力、沟通协作等多维测评，帮助您明确发展方向。
                     </text>
                 </view>
 
                 <view class="help-card">
-                    <text class="card-title">在线咨询</text>
+                    <text class="card-title">导师咨询</text>
                     <text class="card-text">
-                        与专业的心理咨询师进行预约咨询，获得专业的心理指导和建议，改善您的心理健康。
+                        与资深行业导师进行预约咨询，获得简历优化、面试辅导和职业发展建议。
                     </text>
                 </view>
 
                 <view class="help-card">
-                    <text class="card-title">健康数据追踪</text>
+                    <text class="card-title">成长记录追踪</text>
                     <text class="card-text">
-                        记录和追踪您的健康数据，查看测试结果历史，了解自己的心理健康发展趋势。
+                        记录并追踪您的测评结果历史，了解职业能力与目标清晰度的变化趋势。
                     </text>
                 </view>
 
                 <view class="help-card">
                     <text class="card-title">消息通知</text>
                     <text class="card-text">
-                        接收咨询师预约确认、建议推荐等重要信息，不会错过任何重要通知。
+                        接收导师预约确认、建议推荐等重要信息，不会错过任何关键通知。
                     </text>
                 </view>
 
                 <view class="help-card">
                     <text class="card-title">隐私保护</text>
                     <text class="card-text">
-                        所有您的个人信息和测试数据都经过加密存储，我们严格遵守数据隐私政策，保护您的隐私。
+                        所有您的个人信息和测评数据都经过加密存储，我们严格遵守数据隐私政策，保护您的隐私。
                     </text>
                 </view>
             </view>
@@ -120,10 +120,10 @@
                 </view>
 
                 <view class="help-card">
-                    <text class="card-title">Q: 心理咨询师是否真实存在？</text>
+                    <text class="card-title">Q: 平台导师是否真实存在？</text>
                     <text class="card-text">
                         A:
-                        我们的咨询师都是经过认证的专业心理咨询师，具有丰富的咨询经验和相关资质。
+                        我们的导师均经过认证，具备真实行业履历与辅导经验。
                     </text>
                 </view>
 
@@ -139,7 +139,7 @@
                     <text class="card-title">Q: 测试结果是否可信？</text>
                     <text class="card-text">
                         A:
-                        我们提供的所有心理评估工具都是通过科学验证的权威量表，但仅供参考。如有需要，请咨询专业的心理咨询师。
+                        我们提供的测评工具仅用于职业规划参考，最终决策建议结合导师一对一咨询。
                     </text>
                 </view>
             </view>
@@ -405,3 +405,4 @@ export default {
     }
 }
 </style>
+

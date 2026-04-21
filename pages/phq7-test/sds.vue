@@ -131,7 +131,7 @@ export default {
         {
           id: 1,
           type: 'sleep',
-          text: "您是否经常难以入睡？",
+          text: "最近两周，你是否难以开始当天的求职或学习计划",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -142,7 +142,7 @@ export default {
         {
           id: 2,
           type: 'sleep',
-          text: "您是否经常在夜间醒来后难以再次入睡？",
+          text: "最近两周，你是否常在执行中断后难以恢复节奏",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -153,7 +153,7 @@ export default {
         {
           id: 3,
           type: 'sleep',
-          text: "您是否经常早醒且无法再次入睡？",
+          text: "最近两周，你是否经常拖延关键任务（如投递或复盘）",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -164,7 +164,7 @@ export default {
         {
           id: 4,
           type: 'sleep',
-          text: "您是否经常做噩梦？",
+          text: "最近两周，你是否经常因担心结果而回避行动",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -175,7 +175,7 @@ export default {
         {
           id: 5,
           type: 'sleep',
-          text: "您是否经常在睡眠中感到恐惧或焦虑？",
+          text: "最近两周，你是否在行动前反复犹豫导致错过时机",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -186,7 +186,7 @@ export default {
         {
           id: 6,
           type: 'sleep',
-          text: "您是否经常在睡眠中感到身体不适？",
+          text: "最近两周，你是否常被无关信息分散注意力",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -197,7 +197,7 @@ export default {
         {
           id: 7,
           type: 'sleep',
-          text: "您是否经常在睡眠中感到呼吸困难？",
+          text: "最近两周，你是否难以持续完成既定计划",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -208,7 +208,7 @@ export default {
         {
           id: 8,
           type: 'sleep',
-          text: "您是否经常在睡眠中感到心跳加速？",
+          text: "最近两周，你是否容易在受挫后放弃后续行动",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -219,7 +219,7 @@ export default {
         {
           id: 9,
           type: 'sleep',
-          text: "您是否经常在睡眠中感到出汗？",
+          text: "最近两周，你是否常把重要任务推到最后一刻",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -230,7 +230,7 @@ export default {
         {
           id: 10,
           type: 'sleep',
-          text: "您是否经常在睡眠中感到身体僵硬或抽搐？",
+          text: "整体上，你是否能稳定推进求职与职业成长行动",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },

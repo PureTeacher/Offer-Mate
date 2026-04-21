@@ -4,10 +4,10 @@
         <view class="header">
             <view class="header-content">
                 <view class="header-top">
-                    <text class="sunshine-title">暖愈心伴</text>
+                    <text class="sunshine-title">职途引航</text>
                     <view class="deco-dot"></view>
                 </view>
-                <text class="header-subtitle">用心倾听每一个心声</text>
+                <text class="header-subtitle">先评估，再匹配，后成长</text>
                 <view class="header-decoration"></view>
             </view>
         </view>
@@ -74,8 +74,8 @@ export default {
             cardList: [
                 {
                     id: 1,
-                    title: "心理体检",
-                    desc: "专业心理量表｜3分钟快速情绪体检",
+                    title: "职业测评",
+                    desc: "职业性格与兴趣评估｜3分钟快速定位方向",
                     iconPath: "/static/custom-icon-1.png",
                     path: "/pages/phq7-test/index",
                     bgColor: "#E8F5E9",
@@ -85,8 +85,8 @@ export default {
                 },
                 {
                     id: 2,
-                    title: "健康科普",
-                    desc: "专业健康知识｜科学养生，健康生活",
+                    title: "职场干货",
+                    desc: "行业动态与面经分享｜持续提升职场认知",
                     iconPath: "/static/custom-icon-2.png",
                     path: "/pages/health/index",
                     bgColor: "#E3F2FD",
@@ -96,8 +96,8 @@ export default {
                 },
                 {
                     id: 3,
-                    title: "心理医生",
-                    desc: "专业心理咨询师｜一对一专业指导",
+                    title: "职业导师",
+                    desc: "资深行业导师｜一对一职业咨询",
                     iconPath: "/static/custom-icon-3.png",
                     path: "/pages/psychologist/index",
                     bgColor: "#FFF8E1",
@@ -107,8 +107,8 @@ export default {
                 },
                 {
                     id: 4,
-                    title: "AI交流",
-                    desc: "智能心理助手｜24小时在线陪伴",
+                    title: "AI职场顾问",
+                    desc: "智能求职助手｜24小时在线答疑",
                     iconPath: "/static/custom-icon-4.png",
                     path: "/pages/message/message",
                     bgColor: "#FCE4EC",

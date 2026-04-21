@@ -129,7 +129,7 @@ export default {
         {
           id: 1,
           type: 'trust',
-          text: "大多数人基本上是诚实的",
+          text: "我相信多数同事会履行承诺",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -141,7 +141,7 @@ export default {
         {
           id: 2,
           type: 'trust',
-          text: "大多数人是值得信任的",
+          text: "我认为团队成员通常值得信赖",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -153,7 +153,7 @@ export default {
         {
           id: 3,
           type: 'trust',
-          text: "大多数人在处理自己的事务时是诚实的",
+          text: "在协作中，大多数人会如实反馈进度",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -165,7 +165,7 @@ export default {
         {
           id: 4,
           type: 'trust',
-          text: "大多数人是值得信赖的",
+          text: "跨团队合作时，我愿意先给予基本信任",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -177,7 +177,7 @@ export default {
         {
           id: 5,
           type: 'trust',
-          text: "大多数人是善良的",
+          text: "我认为同事大多会公平对待他人",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -189,7 +189,7 @@ export default {
         {
           id: 6,
           type: 'trust',
-          text: "大多数人是乐于助人的",
+          text: "遇到问题时，我相信同事愿意互相支持",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -201,7 +201,7 @@ export default {
         {
           id: 7,
           type: 'trust',
-          text: "大多数人是公平的",
+          text: "我相信大多数人会对结果负责",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -213,7 +213,7 @@ export default {
         {
           id: 8,
           type: 'trust',
-          text: "大多数人是诚实的",
+          text: "我倾向于相信他人不会故意推卸责任",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -225,7 +225,7 @@ export default {
         {
           id: 9,
           type: 'trust',
-          text: "大多数人是可靠的",
+          text: "我相信直属同事会在关键时刻配合",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -237,7 +237,7 @@ export default {
         {
           id: 10,
           type: 'trust',
-          text: "大多数人是值得信赖的",
+          text: "我相信跨部门伙伴会尊重协作规则",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -249,7 +249,7 @@ export default {
         {
           id: 11,
           type: 'trust',
-          text: "大多数人是诚实的",
+          text: "我相信公开沟通能减少误解和猜疑",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },
@@ -261,7 +261,7 @@ export default {
         {
           id: 12,
           type: 'trust',
-          text: "大多数人是值得信任的",
+          text: "整体而言，我对团队信任氛围评价较高",
           options: [
             { text: "完全不同意", desc: "1分", score: 1 },
             { text: "不同意", desc: "2分", score: 2 },

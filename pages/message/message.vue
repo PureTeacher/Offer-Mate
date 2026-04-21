@@ -78,7 +78,7 @@ export default {
             // 对话ID
             conversationId: "",
             // 对话标题
-            conversationTitle: "心理咨询",
+            conversationTitle: "职业咨询",
             // 我的头像
             myAvatar: "/static/logo3.png",
             // 朋友头像

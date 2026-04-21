@@ -5,7 +5,7 @@
                 <text class="section-title">应用信息</text>
                 <view class="item">
                     <text class="label">应用名称</text>
-                    <text class="value">暖愈心伴</text>
+                    <text class="value">职途引航</text>
                 </view>
                 <view class="item">
                     <text class="label">版本号</text>
@@ -14,7 +14,7 @@
                 <view class="item">
                     <text class="label">描述</text>
                     <text class="value">
-                        暖愈心伴是一款专业的心理健康管理应用，致力于为用户提供科学、便捷的心理健康服务。
+                        职途引航是一款专业的职业发展管理应用，致力于为用户提供科学、便捷的职业成长服务。
                     </text>
                 </view>
             </view>
@@ -38,7 +38,7 @@
             <view class="section">
                 <text class="section-title">法律声明</text>
                 <text class="tips">
-                    本应用所有内容仅供参考，不能替代专业医学建议。如有任何健康问题，请咨询专业医生。
+                    本应用所有内容仅供参考，不能替代专业职业建议。如有关键职业决策问题，请咨询专业职业导师。
                 </text>
             </view>
 
@@ -147,3 +147,4 @@ export default {
     color: #999;
 }
 </style>
+

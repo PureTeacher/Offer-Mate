@@ -131,7 +131,7 @@ export default {
         {
           id: 1,
           type: 'stress',
-          text: "一些无法预期的事情发生而感到心烦意乱",
+          text: "过去一个月，你是否因临时任务打乱节奏而感到烦躁",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -143,7 +143,7 @@ export default {
         {
           id: 2,
           type: 'stress',
-          text: "感觉无法控制自己生活中重要的事情",
+          text: "过去一个月，你是否觉得难以掌控工作中的关键事项",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -155,7 +155,7 @@ export default {
         {
           id: 3,
           type: 'stress',
-          text: "感到紧张不安和压力",
+          text: "过去一个月，你是否持续感到工作压力紧绷",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -167,7 +167,7 @@ export default {
         {
           id: 4,
           type: 'stress',
-          text: "成功地处理恼人的生活麻烦",
+          text: "过去一个月，你是否能有效处理突发的工作麻烦",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -179,7 +179,7 @@ export default {
         {
           id: 5,
           type: 'stress',
-          text: "感到自己能有效地处理生活中所发生的重要改变",
+          text: "过去一个月，你是否能适应岗位或项目变化",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -191,7 +191,7 @@ export default {
         {
           id: 6,
           type: 'stress',
-          text: "对于有能力处理自己私人的问题感到很有信心",
+          text: "过去一个月，你是否有信心解决职业上的棘手问题",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -203,7 +203,7 @@ export default {
         {
           id: 7,
           type: 'stress',
-          text: "感到事情顺心如意",
+          text: "过去一个月，你是否觉得近期工作进展基本顺利",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -215,7 +215,7 @@ export default {
         {
           id: 8,
           type: 'stress',
-          text: "发现自己无法处理所有自己必须做的事情",
+          text: "过去一个月，你是否常觉得待办事项远超可承受范围",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -227,7 +227,7 @@ export default {
         {
           id: 9,
           type: 'stress',
-          text: "有办法控制生活中恼人的事情",
+          text: "过去一个月，你是否能掌控让你烦心的工作问题",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -239,7 +239,7 @@ export default {
         {
           id: 10,
           type: 'stress',
-          text: "常觉得自己是驾驭事情的主人",
+          text: "过去一个月，你是否觉得自己能主导工作节奏",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -251,7 +251,7 @@ export default {
         {
           id: 11,
           type: 'stress',
-          text: "常生气，因为很多事情的发生是超出自己所能控制的",
+          text: "过去一个月，你是否常因外部变化而感到无力",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -263,7 +263,7 @@ export default {
         {
           id: 12,
           type: 'stress',
-          text: "经常想到有些事情是自己必须完成的",
+          text: "过去一个月，你是否常在压力下反复内耗",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -275,7 +275,7 @@ export default {
         {
           id: 13,
           type: 'stress',
-          text: "常能掌握时间的安排方式",
+          text: "过去一个月，你是否能合理分配精力给重要任务",
           options: [
             { text: "从不", desc: "4分", score: 4 },
             { text: "很少", desc: "3分", score: 3 },
@@ -287,7 +287,7 @@ export default {
         {
           id: 14,
           type: 'stress',
-          text: "常感到困难的事情堆积如山，而自己无法克服它们",
+          text: "过去一个月，你是否对当前工作负荷感到吃力",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },

@@ -7,7 +7,7 @@
         <view class="header">
             <!-- <view class="header-left">
         <text class="back-arrow" @click="goBack">⬅️</text>
-        <text class="header-title">心理医生</text>
+        <text class="header-title">职业导师</text>
       </view> -->
             <view class="header-right">
                 <view class="appointment-record" @click="goToAppointmentRecord">
@@ -17,7 +17,7 @@
             </view>
         </view>
         <!-- <view class="header-subtitle">
-      <text class="subtitle-text">专业心理咨询师团队</text>
+      <text class="subtitle-text">专业职业导师团队</text>
     </view> -->
 
         <!-- 搜索栏 -->
@@ -26,18 +26,18 @@
                 <text class="search-icon">🔍</text>
                 <input
                     class="search-input"
-                    placeholder="搜索医生姓名或专业领域"
+                    placeholder="搜索导师姓名或专业领域"
                     v-model="searchKeyword"
                     @input="handleSearch"
                 />
             </view>
         </view>
 
-        <!-- 医生列表 -->
+        <!-- 导师列表 -->
         <view class="doctor-list" v-if="!loading">
             <view v-if="filteredDoctors.length === 0" class="empty-state">
                 <text class="empty-emoji">🏥</text>
-                <text class="empty-text">暂无匹配的医生</text>
+                <text class="empty-text">暂无匹配的导师</text>
                 <text class="empty-desc">请尝试其他筛选条件</text>
             </view>
 
@@ -71,7 +71,7 @@
                                     >{{ doctor.age }}岁</text
                                 >
                                 <text class="info-item"
-                                    >医龄{{ doctor.experience }}年</text
+                                    >从业{{ doctor.experience }}年</text
                                 >
                                 <text class="info-item">{{
                                     doctor.title
@@ -118,7 +118,7 @@
                                 class="appointment-btn"
                                 @click.stop="makeAppointment(doctor)"
                             >
-                                预约咨询
+                                预约导师
                             </button>
                         </view>
                     </view>
@@ -132,7 +132,7 @@
             <text class="loading-text">加载中...</text>
         </view>
 
-        <!-- 医生详情弹窗 -->
+        <!-- 导师详情弹窗 -->
         <view class="detail-modal" v-if="showDetail" @click="closeDetail">
             <view class="detail-content" @click.stop>
                 <view class="detail-header">
@@ -171,7 +171,7 @@
                                 >
                             </view>
                             <view class="info-item">
-                                <text class="info-label">医龄</text>
+                                <text class="info-label">从业</text>
                                 <text class="info-value"
                                     >{{ selectedDoctor.experience }}年</text
                                 >
@@ -218,7 +218,7 @@
                         class="detail-appointment-btn"
                         @click="makeAppointment(selectedDoctor)"
                     >
-                        预约咨询
+                        预约导师
                     </button>
                 </view>
             </view>
@@ -242,16 +242,16 @@ export default {
                     gender: "女",
                     age: 35,
                     experience: 8,
-                    title: "主任医师",
+                    title: "首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor1&backgroundColor=b6e3f4",
                     rating: 4.9,
                     reviewCount: 1286,
                     isOnline: true,
-                    specialties: ["焦虑症", "抑郁症", "情感咨询"],
+                    specialties: ["职场焦虑", "职业倦怠", "情感咨询"],
                     introduction:
-                        "专注于认知行为疗法，帮助患者建立积极思维模式，擅长处理焦虑和抑郁问题。",
+                        "专注于认知行为疗法，帮助学员建立积极思维模式，擅长处理焦虑和抑郁问题。",
                     background:
-                        "北京大学心理学博士，中科院心理所博士后，国家二级心理咨询师，从事心理咨询8年。",
+                        "北京大学管理学博士，中科院职业研究院博士后，国家二级职业导师，从事职业咨询8年。",
                     consultationCount: 3240,
                     successRate: 94,
                     responseTime: 15,
@@ -263,16 +263,16 @@ export default {
                     gender: "男",
                     age: 42,
                     experience: 12,
-                    title: "副主任医师",
+                    title: "副首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor2&backgroundColor=c7a2ff",
                     rating: 4.8,
                     reviewCount: 2156,
                     isOnline: false,
-                    specialties: ["家庭治疗", "婚姻咨询", "亲子关系"],
+                    specialties: ["家庭治疗", "职业转型", "亲子关系"],
                     introduction:
                         "系统家庭治疗专家，擅长解决家庭矛盾和亲子关系问题，帮助家庭重建和谐关系。",
                     background:
-                        "清华大学心理学硕士，美国加州大学访问学者，家庭治疗师认证，从业12年。",
+                        "清华大学管理学硕士，美国加州大学访问学者，家庭辅导师认证，从业12年。",
                     consultationCount: 4560,
                     successRate: 92,
                     responseTime: 20,
@@ -284,16 +284,16 @@ export default {
                     gender: "女",
                     age: 38,
                     experience: 10,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor3&backgroundColor=ffd1dc",
                     rating: 4.9,
                     reviewCount: 1890,
                     isOnline: true,
-                    specialties: ["儿童心理", "青少年问题", "学习障碍"],
+                    specialties: ["学习成长", "升学就业", "学习障碍"],
                     introduction:
-                        "儿童心理专家，温柔耐心，擅长处理儿童和青少年的心理问题，深受家长信任。",
+                        "学习成长专家，温柔耐心，擅长处理儿童和青少年的职业发展问题，深受家长信任。",
                     background:
-                        "北京师范大学心理学博士，儿童心理研究所研究员，沙盘游戏治疗师，从业10年。",
+                        "北京师范大学管理学博士，学习成长研究所研究员，沙盘游戏辅导师，从业10年。",
                     consultationCount: 2890,
                     successRate: 96,
                     responseTime: 12,
@@ -305,16 +305,16 @@ export default {
                     gender: "男",
                     age: 45,
                     experience: 15,
-                    title: "主任医师",
+                    title: "首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor4&backgroundColor=ffb3ba",
                     rating: 4.7,
                     reviewCount: 3240,
                     isOnline: true,
-                    specialties: ["创伤治疗", "PTSD", "危机干预"],
+                    specialties: ["职业转型", "PTSD", "职业危机应对"],
                     introduction:
-                        "创伤治疗专家，具有丰富的危机干预经验，帮助患者走出心理创伤，重建生活信心。",
+                        "职业转型专家，具有丰富的职业危机应对经验，帮助学员走出职业挫折，重建生活信心。",
                     background:
-                        "复旦大学心理学博士，国际创伤治疗师认证，危机干预专家，从业15年。",
+                        "复旦大学管理学博士，国际职业转型师认证，职业危机应对专家，从业15年。",
                     consultationCount: 5670,
                     successRate: 89,
                     responseTime: 25,
@@ -326,7 +326,7 @@ export default {
                     gender: "女",
                     age: 33,
                     experience: 7,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor5&backgroundColor=bae1ff",
                     rating: 4.8,
                     reviewCount: 1560,
@@ -335,7 +335,7 @@ export default {
                     introduction:
                         "情感咨询专家，擅长处理恋爱关系和人际交往问题，帮助来访者建立健康的人际关系。",
                     background:
-                        "华东师范大学心理学硕士，情感咨询师认证，人际关系治疗师，从业7年。",
+                        "华东师范大学管理学硕士，情感导师认证，人际关系辅导师，从业7年。",
                     consultationCount: 2130,
                     successRate: 93,
                     responseTime: 18,
@@ -347,16 +347,16 @@ export default {
                     gender: "男",
                     age: 50,
                     experience: 18,
-                    title: "主任医师",
+                    title: "首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor6&backgroundColor=ffdfba",
                     rating: 4.9,
                     reviewCount: 4120,
                     isOnline: false,
-                    specialties: ["老年心理", "认知障碍", "临终关怀"],
+                    specialties: ["成熟职场", "认知障碍", "临终关怀"],
                     introduction:
-                        "老年心理专家，关注老年人的心理健康，擅长处理认知障碍和临终关怀问题。",
+                        "成熟职场专家，关注老年人的职业发展，擅长处理认知障碍和临终关怀问题。",
                     background:
-                        "中山大学心理学博士，老年心理研究所所长，认知行为治疗师，从业18年。",
+                        "中山大学管理学博士，老年职业发展研究中心所长，认知行为辅导师，从业18年。",
                     consultationCount: 6780,
                     successRate: 91,
                     responseTime: 30,
@@ -368,16 +368,16 @@ export default {
                     gender: "女",
                     age: 36,
                     experience: 9,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor7&backgroundColor=ffffba",
                     rating: 4.8,
                     reviewCount: 1980,
                     isOnline: true,
-                    specialties: ["职场心理", "压力管理", "职业规划"],
+                    specialties: ["职场发展", "压力管理", "职业规划"],
                     introduction:
-                        "职场心理专家，帮助职场人士处理工作压力，提升职业幸福感，实现职业发展。",
+                        "职场发展专家，帮助职场人士处理工作压力，提升职业幸福感，实现职业发展。",
                     background:
-                        "中国人民大学心理学硕士，职业规划师认证，压力管理专家，从业9年。",
+                        "中国人民大学管理学硕士，职业规划师认证，压力管理专家，从业9年。",
                     consultationCount: 2670,
                     successRate: 95,
                     responseTime: 16,
@@ -389,16 +389,16 @@ export default {
                     gender: "男",
                     age: 41,
                     experience: 11,
-                    title: "副主任医师",
+                    title: "副首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor8&backgroundColor=baffc9",
                     rating: 4.7,
                     reviewCount: 2890,
                     isOnline: true,
-                    specialties: ["成瘾治疗", "行为矫正", "心理康复"],
+                    specialties: ["习惯重塑", "行为矫正", "职业重建"],
                     introduction:
-                        "成瘾治疗专家，帮助患者戒除各种成瘾行为，重建健康的生活方式。",
+                        "习惯重塑专家，帮助学员戒除各种成瘾行为，重建健康的生活方式。",
                     background:
-                        "武汉大学心理学博士，成瘾治疗师认证，行为治疗专家，从业11年。",
+                        "武汉大学管理学博士，习惯重塑师认证，行为治疗专家，从业11年。",
                     consultationCount: 3890,
                     successRate: 88,
                     responseTime: 22,
@@ -410,16 +410,16 @@ export default {
                     gender: "女",
                     age: 39,
                     experience: 10,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor9&backgroundColor=ffb3d1",
                     rating: 4.9,
                     reviewCount: 2340,
                     isOnline: false,
-                    specialties: ["女性心理", "产后抑郁", "更年期问题"],
+                    specialties: ["女职场关系", "职业回归", "生涯转折"],
                     introduction:
-                        "女性心理专家，关注女性各个阶段的心理健康，特别擅长处理产后抑郁和更年期问题。",
+                        "女职场关系专家，关注女性各个阶段的职业发展，特别擅长处理职业回归和生涯转折。",
                     background:
-                        "北京协和医学院心理学硕士，女性心理研究所研究员，产后心理治疗师，从业10年。",
+                        "北京协和医学院管理学硕士，女职场关系研究所研究员，产后职业辅导师，从业10年。",
                     consultationCount: 3120,
                     successRate: 94,
                     responseTime: 14,
@@ -431,16 +431,16 @@ export default {
                     gender: "男",
                     age: 37,
                     experience: 8,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor10&backgroundColor=d1b3ff",
                     rating: 4.8,
                     reviewCount: 1760,
                     isOnline: true,
                     specialties: ["社交恐惧", "强迫症", "恐惧症"],
                     introduction:
-                        "焦虑障碍专家，擅长处理各种焦虑相关疾病，帮助患者克服恐惧，恢复正常生活。",
+                        "焦虑障碍专家，擅长处理各种焦虑相关疾病，帮助学员克服恐惧，恢复正常生活。",
                     background:
-                        "上海交通大学心理学博士，焦虑障碍治疗师认证，暴露疗法专家，从业8年。",
+                        "上海交通大学管理学博士，焦虑障碍辅导师认证，暴露疗法专家，从业8年。",
                     consultationCount: 2450,
                     successRate: 92,
                     responseTime: 19,
@@ -452,16 +452,16 @@ export default {
                     gender: "女",
                     age: 34,
                     experience: 6,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor11&backgroundColor=b3d1ff",
                     rating: 4.8,
                     reviewCount: 1420,
                     isOnline: true,
                     specialties: ["艺术治疗", "音乐治疗", "表达性治疗"],
                     introduction:
-                        "艺术治疗师，通过艺术创作帮助患者表达内心情感，特别适合儿童和青少年。",
+                        "艺术辅导师，通过艺术创作帮助学员表达内心情感，特别适合儿童和青少年。",
                     background:
-                        "中央美术学院心理学硕士，艺术治疗师认证，音乐治疗师，从业6年。",
+                        "中央美术学院管理学硕士，艺术辅导师认证，音乐辅导师，从业6年。",
                     consultationCount: 1890,
                     successRate: 90,
                     responseTime: 21,
@@ -473,16 +473,16 @@ export default {
                     gender: "男",
                     age: 48,
                     experience: 16,
-                    title: "主任医师",
+                    title: "首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor12&backgroundColor=ffd1b3",
                     rating: 4.9,
                     reviewCount: 3560,
                     isOnline: false,
-                    specialties: ["精神分析", "人格障碍", "深度心理治疗"],
+                    specialties: ["职业复盘", "行为模式", "深度职业辅导"],
                     introduction:
-                        "精神分析专家，擅长深度心理治疗，帮助患者探索潜意识，解决深层心理问题。",
+                        "职业复盘专家，擅长深度职业辅导，帮助学员探索潜意识，解决深层职业发展问题。",
                     background:
-                        "北京大学心理学博士，精神分析学会会员，国际精神分析师认证，从业16年。",
+                        "北京大学管理学博士，职业复盘学会会员，国际职业复盘师认证，从业16年。",
                     consultationCount: 5230,
                     successRate: 87,
                     responseTime: 35,
@@ -494,16 +494,16 @@ export default {
                     gender: "女",
                     age: 31,
                     experience: 5,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor13&backgroundColor=b3ffd1",
                     rating: 4.7,
                     reviewCount: 980,
                     isOnline: true,
                     specialties: ["正念治疗", "冥想指导", "压力缓解"],
                     introduction:
-                        "正念治疗师，通过正念冥想帮助患者缓解压力，提升心理韧性，改善生活质量。",
+                        "正念辅导师，通过正念冥想帮助学员缓解压力，提升职业韧性，改善生活质量。",
                     background:
-                        "南京大学心理学硕士，正念治疗师认证，冥想指导师，从业5年。",
+                        "南京大学管理学硕士，正念辅导师认证，冥想指导师，从业5年。",
                     consultationCount: 1560,
                     successRate: 93,
                     responseTime: 17,
@@ -515,16 +515,16 @@ export default {
                     gender: "男",
                     age: 44,
                     experience: 13,
-                    title: "副主任医师",
+                    title: "副首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor14&backgroundColor=d1ffb3",
                     rating: 4.8,
                     reviewCount: 2670,
                     isOnline: true,
                     specialties: ["团体治疗", "人际关系", "社交技能训练"],
                     introduction:
-                        "团体治疗专家，通过团体活动帮助患者改善人际关系，提升社交技能。",
+                        "团体治疗专家，通过团体活动帮助学员改善人际关系，提升社交技能。",
                     background:
-                        "华中师范大学心理学博士，团体治疗师认证，社交技能训练师，从业13年。",
+                        "华中师范大学管理学博士，团体辅导师认证，社交技能训练师，从业13年。",
                     consultationCount: 3780,
                     successRate: 91,
                     responseTime: 24,
@@ -536,16 +536,16 @@ export default {
                     gender: "女",
                     age: 40,
                     experience: 11,
-                    title: "副主任医师",
+                    title: "副首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor15&backgroundColor=ffb3ff",
                     rating: 4.9,
                     reviewCount: 2980,
                     isOnline: false,
                     specialties: ["睡眠障碍", "失眠治疗", "生物反馈"],
                     introduction:
-                        "睡眠专家，帮助患者解决各种睡眠问题，通过生物反馈技术改善睡眠质量。",
+                        "睡眠专家，帮助学员解决各种睡眠问题，通过生物反馈技术改善睡眠质量。",
                     background:
-                        "北京师范大学心理学博士，睡眠医学专家，生物反馈治疗师，从业11年。",
+                        "北京师范大学管理学博士，睡眠医学专家，生物反馈辅导师，从业11年。",
                     consultationCount: 4120,
                     successRate: 96,
                     responseTime: 13,
@@ -557,16 +557,16 @@ export default {
                     gender: "男",
                     age: 46,
                     experience: 14,
-                    title: "主任医师",
+                    title: "首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor16&backgroundColor=b3ffff",
                     rating: 4.8,
                     reviewCount: 3340,
                     isOnline: true,
-                    specialties: ["性心理", "性功能障碍", "性取向咨询"],
+                    specialties: ["职场关系", "沟通障碍", "关系沟通"],
                     introduction:
-                        "性心理专家，专业处理各种性心理问题，帮助患者建立健康的性观念。",
+                        "职场关系专家，专业处理各种职场关系问题，帮助学员建立健康的性观念。",
                     background:
-                        "复旦大学心理学博士，性心理治疗师认证，性医学专家，从业14年。",
+                        "复旦大学管理学博士，性职业辅导师认证，性医学专家，从业14年。",
                     consultationCount: 4560,
                     successRate: 89,
                     responseTime: 28,
@@ -578,16 +578,16 @@ export default {
                     gender: "女",
                     age: 32,
                     experience: 6,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor17&backgroundColor=ffffb3",
                     rating: 4.7,
                     reviewCount: 1230,
                     isOnline: true,
                     specialties: ["饮食障碍", "身体意象", "自我接纳"],
                     introduction:
-                        "饮食障碍专家，帮助患者建立健康的身体意象，改善饮食关系，提升自我接纳。",
+                        "饮食障碍专家，帮助学员建立健康的身体意象，改善饮食关系，提升自我接纳。",
                     background:
-                        "浙江大学心理学硕士，饮食障碍治疗师认证，身体意象专家，从业6年。",
+                        "浙江大学管理学硕士，饮食障碍辅导师认证，身体意象专家，从业6年。",
                     consultationCount: 1780,
                     successRate: 92,
                     responseTime: 20,
@@ -599,16 +599,16 @@ export default {
                     gender: "男",
                     age: 52,
                     experience: 20,
-                    title: "主任医师",
+                    title: "首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor18&backgroundColor=d1d1ff",
                     rating: 4.9,
                     reviewCount: 4560,
                     isOnline: false,
-                    specialties: ["心理评估", "智力测试", "人格测试"],
+                    specialties: ["职业评估", "智力测试", "人格测试"],
                     introduction:
-                        "心理评估专家，擅长各种心理测试和评估，为患者提供准确的心理诊断。",
+                        "职业评估专家，擅长各种职业测评和评估，为学员提供准确的发展诊断。",
                     background:
-                        "中科院心理所博士，心理测量学专家，国际心理评估师认证，从业20年。",
+                        "中科院职业研究院博士，职业测评专家，国际职业评估师认证，从业20年。",
                     consultationCount: 6780,
                     successRate: 95,
                     responseTime: 40,
@@ -620,16 +620,16 @@ export default {
                     gender: "女",
                     age: 38,
                     experience: 9,
-                    title: "主治医师",
+                    title: "职业发展导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor19&backgroundColor=ffd1d1",
                     rating: 4.8,
                     reviewCount: 2100,
                     isOnline: true,
-                    specialties: ["创伤后成长", "心理韧性", "积极心理学"],
+                    specialties: ["创伤后成长", "职业韧性", "积极成长"],
                     introduction:
-                        "积极心理学专家，帮助患者从创伤中成长，提升心理韧性，发现生活的意义。",
+                        "积极成长专家，帮助学员从创伤中成长，提升职业韧性，发现生活的意义。",
                     background:
-                        "清华大学心理学博士，积极心理学研究员，创伤后成长专家，从业9年。",
+                        "清华大学管理学博士，积极成长研究员，创伤后成长专家，从业9年。",
                     consultationCount: 2890,
                     successRate: 94,
                     responseTime: 16,
@@ -641,16 +641,16 @@ export default {
                     gender: "男",
                     age: 43,
                     experience: 12,
-                    title: "副主任医师",
+                    title: "副首席职业导师",
                     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=doctor20&backgroundColor=d1ffd1",
                     rating: 4.7,
                     reviewCount: 2450,
                     isOnline: true,
-                    specialties: ["网络成瘾", "游戏障碍", "数字健康"],
+                    specialties: ["信息过载", "拖延问题", "数字健康"],
                     introduction:
-                        "数字健康专家，帮助患者摆脱网络和游戏成瘾，建立健康的数字生活方式。",
+                        "数字健康专家，帮助学员摆脱网络和游戏成瘾，建立健康的数字生活方式。",
                     background:
-                        "北京理工大学心理学博士，数字健康专家，网络成瘾治疗师，从业12年。",
+                        "北京理工大学管理学博士，数字健康专家，网络习惯重塑师，从业12年。",
                     consultationCount: 3450,
                     successRate: 90,
                     responseTime: 23,
@@ -687,7 +687,7 @@ export default {
                 await new Promise((resolve) => setTimeout(resolve, 1000));
                 this.loading = false;
             } catch (error) {
-                console.error("加载医生列表失败:", error);
+                console.error("加载导师列表失败:", error);
                 this.loading = false;
             }
         },
@@ -707,7 +707,7 @@ export default {
         },
 
         makeAppointment(doctor) {
-            // 跳转到预约页面，传递医生信息
+            // 跳转到预约页面，传递导师信息
             uni.navigateTo({
                 url: `/pages/psychologist/appointment?doctorId=${doctor.id}&doctorName=${encodeURIComponent(doctor.name)}&doctorTitle=${encodeURIComponent(doctor.title)}&doctorAvatar=${encodeURIComponent(doctor.avatar)}&doctorSpecialties=${encodeURIComponent(doctor.specialties.join(","))}`,
             });
@@ -1257,3 +1257,4 @@ export default {
     }
 }
 </style>
+

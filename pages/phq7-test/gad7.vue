@@ -138,7 +138,7 @@ export default {
         {
           id: 1,
           type: 'anxiety',
-          text: "感觉紧张、焦虑或烦躁",
+          text: "最近两周，你是否经常担心求职或工作中的不确定性",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -149,7 +149,7 @@ export default {
         {
           id: 2,
           type: 'anxiety',
-          text: "不能停止或控制担忧",
+          text: "最近两周，你是否难以停止对职业问题的担忧",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -160,7 +160,7 @@ export default {
         {
           id: 3,
           type: 'anxiety',
-          text: "对各种各样的事情担忧过多",
+          text: "最近两周，你是否对多件职业事务反复过度担心",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -171,7 +171,7 @@ export default {
         {
           id: 4,
           type: 'anxiety',
-          text: "很难放松下来",
+          text: "最近两周，你是否很难在下班后真正放松",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -182,7 +182,7 @@ export default {
         {
           id: 5,
           type: 'anxiety',
-          text: "由于不安而无法静坐",
+          text: "最近两周，你是否因紧张而坐立不安",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -193,7 +193,7 @@ export default {
         {
           id: 6,
           type: 'anxiety',
-          text: "变得容易烦恼或急躁",
+          text: "最近两周，你是否更容易因工作小事急躁",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },
@@ -204,7 +204,7 @@ export default {
         {
           id: 7,
           type: 'anxiety',
-          text: "害怕将有可怕的事发生",
+          text: "最近两周，你是否总担心职业上会出现严重失误",
           options: [
             { text: "完全不会", desc: "0分", score: 0 },
             { text: "几天", desc: "1分", score: 1 },

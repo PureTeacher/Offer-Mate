@@ -131,7 +131,7 @@ export default {
         {
           id: 1,
           type: 'sleep',
-          text: "您通常需要多长时间才能入睡？",
+          text: "最近一个月，你是否保持了稳定的求职或学习作息",
           options: [
             { text: "0-15分钟", desc: "0分", score: 0 },
             { text: "16-30分钟", desc: "1分", score: 1 },
@@ -142,7 +142,7 @@ export default {
         {
           id: 2,
           type: 'sleep',
-          text: "您每晚实际睡眠时间是多少？",
+          text: "最近一个月，你每天可用于职业准备的有效时长是否充足",
           options: [
             { text: "超过7小时", desc: "0分", score: 0 },
             { text: "6-7小时", desc: "1分", score: 1 },
@@ -153,7 +153,7 @@ export default {
         {
           id: 3,
           type: 'sleep',
-          text: "您是否经常在夜间醒来？",
+          text: "最近一个月，你是否常被焦虑打断复盘或学习节奏",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -164,7 +164,7 @@ export default {
         {
           id: 4,
           type: 'sleep',
-          text: "您对睡眠质量满意吗？",
+          text: "你对近期面试准备状态的满意度如何",
           options: [
             { text: "非常满意", desc: "0分", score: 0 },
             { text: "比较满意", desc: "1分", score: 1 },
@@ -175,7 +175,7 @@ export default {
         {
           id: 5,
           type: 'sleep',
-          text: "您是否经常做噩梦？",
+          text: "最近一个月，你是否因临近面试而反复失眠",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -186,7 +186,7 @@ export default {
         {
           id: 6,
           type: 'sleep',
-          text: "您是否经常感到睡眠不足？",
+          text: "最近一个月，你是否常感到准备不充分",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -197,7 +197,7 @@ export default {
         {
           id: 7,
           type: 'sleep',
-          text: "您是否经常感到白天困倦？",
+          text: "最近一个月，你在白天面试或学习时是否容易疲惫",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
