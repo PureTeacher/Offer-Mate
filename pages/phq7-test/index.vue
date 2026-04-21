@@ -141,7 +141,7 @@ export default {
                     path: "/pages/phq7-test/cpss",
                     isNew: false,
                     detailDescription:
-                        '本测评用于识别你在工作、学习和求职阶段的压力水平，共14个条目，覆盖紧张感与掌控感两个维度。总分越高，表示压力感知越明显。',
+                        "本测评用于识别你在工作、学习和求职阶段的压力水平，共14个条目，覆盖紧张感与掌控感两个维度。总分越高，表示压力感知越明显。",
                 },
                 {
                     id: "ucla",
@@ -515,4 +515,3 @@ export default {
     }
 }
 </style>
-

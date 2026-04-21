@@ -122,8 +122,7 @@
                 <view class="help-card">
                     <text class="card-title">Q: 平台导师是否真实存在？</text>
                     <text class="card-text">
-                        A:
-                        我们的导师均经过认证，具备真实行业履历与辅导经验。
+                        A: 我们的导师均经过认证，具备真实行业履历与辅导经验。
                     </text>
                 </view>
 
@@ -405,4 +404,3 @@ export default {
     }
 }
 </style>
-
