@@ -1,0 +1,33 @@
+# 依赖包
+node_modules/
+package-lock.json
+yarn.lock
+
+# 生成的文件和目录
+unpackage/
+dist/
+build/
+
+# IDE 相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.DS_Store
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 运行时生成的文件
+*.log
+.cache/
+temp/

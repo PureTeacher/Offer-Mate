@@ -1,0 +1,78 @@
+.animation-out-box {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 996;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation-out-box.show {
+    visibility: visible;
+}
+
+.animation-box {
+    position: relative;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 998;
+    overflow: visible;
+}
+
+.animation-box.animation-show {
+    visibility: visible;
+}
+
+.animation-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.39);
+    z-index: 997;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.animation-mask.animation-show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.animation-box.popup {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100vh);
+    width: 100%;
+}
+
+.animation-box.animation-show.popup {
+    transform: translateY(0);
+}
+
+.animation-box.opacity {
+    opacity: 0;
+}
+
+.animation-box.animation-show.opacity {
+    opacity: 1;
+}
+
+.animation-box.popdown {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(-100vh);
+    width: 100%;
+}
+
+.animation-box.animation-show.popdown {
+    transform: translateY(0);
+}

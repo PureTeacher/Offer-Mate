@@ -1,0 +1,230 @@
+{
+    "easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
+    "pages": [
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "我的收藏",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/message/message",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/message/conversation-list",
+            "style": {
+                "navigationBarTitleText": "对话历史",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/login/login",
+            "style": {
+                "navigationBarTitleText": "我的收藏",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/register/register",
+            "style": {
+                "navigationBarTitleText": "我的收藏",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/login/forget-password",
+            "style": {
+                "navigationBarTitleText": "找回密码",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/phq7-test/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/do-test",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/history",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/gad7",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/cpss",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/ucla",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/psqi",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/phq7-test/sds",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/health/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/psychologist/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/psychologist/appointment",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/psychologist/record",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/user/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/user/settings",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/user/account",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/user/change-password",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/help/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/feedback/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
+            "path": "pages/about/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "app-plus": {
+            "titleView": false
+        }
+    },
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "#E8825B",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/static/tab-home.png",
+                "selectedIconPath": "/static/tab-home-active.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "iconPath": "/static/tab-user.png",
+                "selectedIconPath": "/static/tab-user-active.png",
+                "text": "个人中心"
+            }
+        ]
+    },
+    "uniIdRouter": {}
+}
