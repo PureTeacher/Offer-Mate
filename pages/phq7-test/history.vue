@@ -199,8 +199,8 @@ export default {
                 const testName = item.questionnaireName.toLowerCase();
                 if (this.currentFilter === "mood") {
                     return (
-                        testName.includes("抑郁") ||
-                        testName.includes("焦虑") ||
+                        testName.includes("疲倦") ||
+                        testName.includes("紧张") ||
                         testName.includes("phq") ||
                         testName.includes("gad")
                     );
@@ -274,13 +274,13 @@ export default {
 
         getTestName(testName) {
             const nameMap = {
-                "PHQ-9抑郁筛查量表": "抑郁评估",
-                "GAD-7焦虑筛查量表": "焦虑评估",
+                "职业性格特质筛查量表": "疲倦评估",
+                "职场压力耐受度筛查量表": "压力管理",
                 CPSS创伤后应激量表: "创伤评估",
-                UCLA孤独感量表: "孤独感评估",
+                职场归属感与团队融入量表: "职场孤立感评估",
                 ITS人际信任量表: "人际信任量表",
-                PSQI匹兹堡睡眠质量指数: "匹兹堡睡眠质量指数",
-                SDS睡眠障碍量表: "睡眠障碍量表",
+                PSQI求职期作息与精力评估表: "求职期作息与精力评估表",
+                SDS作息失调量表: "作息失调量表",
             };
             return nameMap[testName] || testName;
         },
@@ -291,8 +291,8 @@ export default {
 
         getTestEmoji(testName) {
             const name = testName.toLowerCase();
-            if (name.includes("抑郁") || name.includes("phq")) return "😔";
-            if (name.includes("焦虑") || name.includes("gad")) return "😰";
+            if (name.includes("疲倦") || name.includes("phq")) return "😔";
+            if (name.includes("紧张") || name.includes("gad")) return "😰";
             if (name.includes("创伤") || name.includes("cpss")) return "😨";
             if (name.includes("孤独") || name.includes("ucla")) return "😔";
             if (name.includes("人际") || name.includes("its")) return "🤝";

@@ -103,7 +103,7 @@
           </view>
           
           <view class="level-section">
-            <text class="level-label">焦虑程度</text>
+            <text class="level-label">承受压力层级</text>
             <text class="level-value" :class="getLevelClass(resultData.anxietyLevel)">{{resultData.anxietyLevel}}</text>
           </view>
           
@@ -132,7 +132,7 @@
 export default {
   data() {
     return {
-      themeColor: '#FFA500', // 主色调 - 橙色代表焦虑评估
+      themeColor: '#FFA500', // 主色调 - 橙色代表压力管理
 	  answers: [],  // 初始化空数组
       questions: [
         {
@@ -246,11 +246,11 @@ export default {
     },
     typeTag() {
       const types = {
-        mood: { text: '情绪评估', color: '#FF6B81', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        mood: { text: '工作热情评估', color: '#FF6B81', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {
@@ -323,27 +323,27 @@ export default {
       // 计算总分
       const totalScore = this.answers.reduce((sum, a) => sum + (a ? a.score : 0), 0)
       
-      // 根据GAD-7标准判断焦虑程度
+      // 根据GAD-7标准判断承受压力层级
       let anxietyLevel = ''
       let levelDescription = ''
       let suggestion = ''
       
       if (totalScore >= 0 && totalScore <= 4) {
-        anxietyLevel = '无明显焦虑症状'
-        levelDescription = '您的心理健康状况良好，没有明显的焦虑症状，属于正常范围。'
-        suggestion = '继续保持良好的生活习惯，定期关注自己的心理健康。'
+        anxietyLevel = '无明显紧张状态'
+        levelDescription = '您的求职工作状态非常好，没有明显的紧张状态，属于正常范围。'
+        suggestion = '继续保持良好的生活习惯，定期关注自己的职业心态健康。'
       } else if (totalScore >= 5 && totalScore <= 9) {
-        anxietyLevel = '轻度焦虑'
-        levelDescription = '您可能有一些轻微的焦虑症状，可能对日常生活有一定影响，但通常可以应对。'
-        suggestion = '建议多参与放松活动，保持规律作息，学习一些放松技巧，如症状持续可考虑寻求专业帮助。'
+        anxietyLevel = '轻度紧张'
+        levelDescription = '您可能有一些轻微的紧张状态，可能对日常生活有一定影响，但通常可以应对。'
+        suggestion = '建议多参与放松活动，保持规律作息，学习一些放松技巧，如状态持续可考虑寻求专业帮助。'
       } else if (totalScore >= 10 && totalScore <= 14) {
-        anxietyLevel = '中度焦虑'
-        levelDescription = '您有明显的焦虑症状，对日常生活和社交活动有明显影响，可能需要进一步关注和干预。'
-        suggestion = '建议尽快咨询心理医生或精神科医生，制定合适的治疗方案，学习焦虑管理技巧。'
+        anxietyLevel = '中度紧张'
+        levelDescription = '您有明显的紧张状态，对日常生活和社交活动有明显影响，可能需要进一步关注和干预。'
+        suggestion = '建议尽快咨询职场顾问导师或求职指导专家，制定合适的指导提升方案，学习紧张管理技巧。'
       } else if (totalScore >= 15 && totalScore <= 21) {
-        anxietyLevel = '重度焦虑'
-        levelDescription = '您的焦虑症状非常严重，严重影响日常生活、工作和社交功能，建议寻求专业帮助。'
-        suggestion = '请立即联系专业心理医生或精神科医生，制定综合治疗方案，必要时可考虑药物治疗。'
+        anxietyLevel = '重度紧张'
+        levelDescription = '您的紧张状态非常严重，严重影响日常生活、工作和社交功能，建议寻求专业帮助。'
+        suggestion = '请立即联系专业职场顾问导师或求职指导专家，制定综合指导提升方案，必要时可考虑系统脱产培训。'
       }
       
       // 设置结果数据并显示弹窗
@@ -388,16 +388,16 @@ restartTest() {
   this.scrollToTop()
 },
 getLevelClass(level) {
-  if (level.includes('无明显焦虑')) return 'level-normal'
-  if (level.includes('轻度焦虑')) return 'level-mild'
-  if (level.includes('中度焦虑')) return 'level-moderate'
-  if (level.includes('重度焦虑')) return 'level-critical'
+  if (level.includes('无明显紧张')) return 'level-normal'
+  if (level.includes('轻度紧张')) return 'level-mild'
+  if (level.includes('中度紧张')) return 'level-moderate'
+  if (level.includes('重度紧张')) return 'level-critical'
   return 'level-normal'
 },
 // 保存测试结果到数据库
 async saveTestResultToDatabase() {
   const requestData = {
-    questionnaireName: 'GAD-7广泛性焦虑障碍量表',
+    questionnaireName: 'GAD-7广泛性紧张障碍量表',
     questionnaireType: 'mood',
     score: this.resultData.totalScore,
     depressionLevel: this.resultData.anxietyLevel,

@@ -95,7 +95,7 @@
           </view>
           
           <view class="level-section">
-            <text class="level-label">孤独感水平</text>
+            <text class="level-label">职场孤立感水平</text>
             <text class="level-value" :class="getLevelClass(resultData.lonelinessLevel)">{{resultData.lonelinessLevel}}</text>
           </view>
           
@@ -124,7 +124,7 @@
 export default {
   data() {
     return {
-      themeColor: '#FF6B81', // 主色调 - 粉色代表孤独感评估
+      themeColor: '#FF6B81', // 主色调 - 粉色代表职场孤立感评估
       answers: [],  // 初始化空数组
       questions: [
         {
@@ -382,11 +382,11 @@ export default {
     typeTag() {
       const types = {
         social: { text: '人际关系', color: '#FF6B81', icon: '/static/icons/social.png' },
-        mood: { text: '情绪评估', color: '#FFA500', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        mood: { text: '工作热情评估', color: '#FFA500', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {
@@ -459,27 +459,27 @@ export default {
       // 计算总分
       const totalScore = this.answers.reduce((sum, a) => sum + (a ? a.score : 0), 0)
       
-      // 根据UCLA孤独感量表标准判断孤独感水平
+      // 根据职场归属感与团队融入量表标准判断职场孤立感水平
       let lonelinessLevel = ''
       let levelDescription = ''
       let suggestion = ''
       
       if (totalScore >= 20 && totalScore <= 34) {
-        lonelinessLevel = '低孤独感'
-        levelDescription = '您的孤独感水平较低，人际关系良好，社交能力较强。'
+        lonelinessLevel = '低职场孤立感'
+        levelDescription = '您的职场孤立感水平较低，人际关系良好，社交能力较强。'
         suggestion = '继续保持良好的社交习惯，多参与社交活动，维持现有的人际关系。'
       } else if (totalScore >= 35 && totalScore <= 49) {
-        lonelinessLevel = '中等孤独感'
-        levelDescription = '您感受到一定程度的孤独感，可能需要关注人际关系质量。'
+        lonelinessLevel = '中等职场孤立感'
+        levelDescription = '您感受到一定程度的职场孤立感，可能需要关注人际关系质量。'
         suggestion = '建议主动参与社交活动，培养兴趣爱好，寻求志同道合的朋友，必要时可寻求专业帮助。'
       } else if (totalScore >= 50 && totalScore <= 64) {
-        lonelinessLevel = '较高孤独感'
-        levelDescription = '您的孤独感水平较高，对人际关系和社交活动有明显影响。'
-        suggestion = '建议寻求专业心理咨询师的帮助，学习社交技能，建立支持网络，参与团体活动。'
+        lonelinessLevel = '较高职场孤立感'
+        levelDescription = '您的职场孤立感水平较高，对人际关系和社交活动有明显影响。'
+        suggestion = '建议寻求资深职业导师的帮助，学习社交技能，建立支持网络，参与团体活动。'
       } else if (totalScore >= 65 && totalScore <= 80) {
-        lonelinessLevel = '高孤独感'
-        levelDescription = '您的孤独感水平很高，严重影响日常生活和人际关系。'
-        suggestion = '强烈建议寻求专业心理医生的帮助，进行系统的心理治疗，学习社交技能和人际关系管理。'
+        lonelinessLevel = '高职场孤立感'
+        levelDescription = '您的职场孤立感水平很高，严重影响日常生活和人际关系。'
+        suggestion = '强烈建议寻求专业职场顾问导师的帮助，进行系统的职业心态指导提升，学习社交技能和人际关系管理。'
       }
       
       // 设置结果数据并显示弹窗
@@ -524,16 +524,16 @@ export default {
       this.scrollToTop()
     },
     getLevelClass(level) {
-      if (level.includes('低孤独感')) return 'level-normal'
-      if (level.includes('中等孤独感')) return 'level-mild'
-      if (level.includes('较高孤独感')) return 'level-moderate'
-      if (level.includes('高孤独感')) return 'level-severe'
+      if (level.includes('低职场孤立感')) return 'level-normal'
+      if (level.includes('中等职场孤立感')) return 'level-mild'
+      if (level.includes('较高职场孤立感')) return 'level-moderate'
+      if (level.includes('高职场孤立感')) return 'level-severe'
       return 'level-normal'
     },
     // 保存测试结果到数据库
     async saveTestResultToDatabase() {
       const requestData = {
-        questionnaireName: 'UCLA孤独感量表',
+        questionnaireName: '职场归属感与团队融入量表',
         questionnaireType: 'social',
         score: this.resultData.totalScore,
         depressionLevel: this.resultData.lonelinessLevel,

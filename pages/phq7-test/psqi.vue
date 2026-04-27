@@ -96,7 +96,7 @@
           </view>
           
           <view class="level-section">
-            <text class="level-label">睡眠质量</text>
+            <text class="level-label">面试精力</text>
             <text class="level-value" :class="getLevelClass(resultData.sleepQuality)">{{resultData.sleepQuality}}</text>
           </view>
           
@@ -125,7 +125,7 @@
 export default {
   data() {
     return {
-      themeColor: '#9C27B0', // 主色调 - 紫色代表睡眠评估
+      themeColor: '#9C27B0', // 主色调 - 紫色代表时间管理评估
       answers: [],  // 初始化空数组
       questions: [
         {
@@ -153,7 +153,7 @@ export default {
         {
           id: 3,
           type: 'sleep',
-          text: "最近一个月，你是否常被焦虑打断复盘或学习节奏",
+          text: "最近一个月，你是否常被紧张打断复盘或学习节奏",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -175,7 +175,7 @@ export default {
         {
           id: 5,
           type: 'sleep',
-          text: "最近一个月，你是否因临近面试而反复失眠",
+          text: "最近一个月，你是否因临近面试而反复精力不济",
           options: [
             { text: "从不", desc: "0分", score: 0 },
             { text: "很少", desc: "1分", score: 1 },
@@ -239,12 +239,12 @@ export default {
     },
     typeTag() {
       const types = {
-        sleep: { text: '睡眠质量', color: '#9C27B0', icon: '/static/icons/sleep.png' },
-        mood: { text: '情绪评估', color: '#FFA500', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        sleep: { text: '面试精力', color: '#9C27B0', icon: '/static/icons/sleep.png' },
+        mood: { text: '工作热情评估', color: '#FFA500', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {
@@ -317,27 +317,27 @@ export default {
       // 计算总分
       const totalScore = this.answers.reduce((sum, a) => sum + (a ? a.score : 0), 0)
       
-      // 根据PSQI标准判断睡眠质量
+      // 根据PSQI标准判断面试精力
       let sleepQuality = ''
       let levelDescription = ''
       let suggestion = ''
       
       if (totalScore >= 0 && totalScore <= 5) {
-        sleepQuality = '睡眠质量良好'
-        levelDescription = '您的睡眠质量很好，睡眠时间充足，睡眠效率高。'
+        sleepQuality = '面试精力良好'
+        levelDescription = '您的面试精力很好，睡眠时间充足，睡眠效率高。'
         suggestion = '继续保持良好的睡眠习惯，规律作息，避免睡前使用电子设备，维持健康的睡眠环境。'
       } else if (totalScore >= 6 && totalScore <= 10) {
-        sleepQuality = '睡眠质量一般'
-        levelDescription = '您的睡眠质量一般，可能存在一些睡眠问题，但影响不大。'
+        sleepQuality = '面试精力一般'
+        levelDescription = '您的面试精力一般，可能存在一些作息不规律，但影响不大。'
         suggestion = '建议改善睡眠环境，建立规律的睡眠时间，避免睡前刺激性活动，必要时可寻求专业帮助。'
       } else if (totalScore >= 11 && totalScore <= 15) {
-        sleepQuality = '睡眠质量较差'
-        levelDescription = '您的睡眠质量较差，睡眠问题对日常生活有明显影响。'
-        suggestion = '建议寻求专业睡眠医生的帮助，进行睡眠评估，学习睡眠卫生知识，必要时可考虑药物治疗。'
+        sleepQuality = '面试精力较差'
+        levelDescription = '您的面试精力较差，作息不规律对日常生活有明显影响。'
+        suggestion = '建议寻求时间管理导师的帮助，进行时间管理评估，学习时间管理精力分配知识，必要时可考虑系统脱产培训。'
       } else if (totalScore >= 16 && totalScore <= 21) {
-        sleepQuality = '睡眠质量很差'
-        levelDescription = '您的睡眠质量很差，严重影响日常生活和身体健康。'
-        suggestion: '强烈建议立即寻求专业睡眠医生的帮助，进行全面的睡眠评估和治疗，制定个性化的睡眠改善计划。'
+        sleepQuality = '面试精力很差'
+        levelDescription = '您的面试精力很差，严重影响日常生活和面试状态。'
+        suggestion: '强烈建议立即寻求时间管理导师的帮助，进行全面的时间管理评估和指导提升，制定个性化的睡眠改善计划。'
       }
       
       // 设置结果数据并显示弹窗
@@ -382,16 +382,16 @@ export default {
       this.scrollToTop()
     },
     getLevelClass(level) {
-      if (level.includes('睡眠质量良好')) return 'level-normal'
-      if (level.includes('睡眠质量一般')) return 'level-mild'
-      if (level.includes('睡眠质量较差')) return 'level-moderate'
-      if (level.includes('睡眠质量很差')) return 'level-severe'
+      if (level.includes('面试精力良好')) return 'level-normal'
+      if (level.includes('面试精力一般')) return 'level-mild'
+      if (level.includes('面试精力较差')) return 'level-moderate'
+      if (level.includes('面试精力很差')) return 'level-severe'
       return 'level-normal'
     },
     // 保存测试结果到数据库
     async saveTestResultToDatabase() {
       const requestData = {
-        questionnaireName: 'PSQI匹兹堡睡眠质量指数',
+        questionnaireName: 'PSQI求职期作息与精力评估表',
         questionnaireType: 'sleep',
         score: this.resultData.totalScore,
         depressionLevel: this.resultData.sleepQuality,

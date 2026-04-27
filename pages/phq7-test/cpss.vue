@@ -331,11 +331,11 @@ export default {
     typeTag() {
       const types = {
         stress: { text: '压力评估', color: '#FF6B81', icon: '/static/icons/stress.png' },
-        mood: { text: '情绪评估', color: '#FFA500', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        mood: { text: '工作热情评估', color: '#FFA500', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {
@@ -415,16 +415,16 @@ export default {
       
       if (totalScore >= 0 && totalScore <= 18) {
         stressLevel = '低压力水平'
-        levelDescription = '您的压力感知水平较低，心理状态良好。'
-        suggestion = '继续保持良好的生活习惯和积极的心态，定期进行自我关怀。'
+        levelDescription = '您的压力感知水平较低，职业心态良好。'
+        suggestion = '继续保持良好的生活习惯的心态，定期进行自我复盘。'
       } else if (totalScore >= 19 && totalScore <= 28) {
         stressLevel = '中等压力水平'
-        levelDescription = '您感受到中等程度的压力，需要适当关注自己的心理健康。'
+        levelDescription = '您感受到中等程度的压力，需要适当关注自己的职业心态健康。'
         suggestion = '建议学习一些压力管理技巧，如深呼吸、冥想、运动等，必要时可寻求专业帮助。'
       } else if (totalScore >= 29 && totalScore <= 56) {
         stressLevel = '高压力水平'
         levelDescription = '您的压力感知水平较高，建议及时采取应对措施。'
-        suggestion = '强烈建议寻求专业心理咨询师的帮助，学习有效的压力管理策略，必要时可考虑药物治疗。'
+        suggestion = '强烈建议寻求资深职业导师的帮助，学习有效的压力管理策略，必要时可考虑系统脱产培训。'
       }
       
       // 设置结果数据并显示弹窗

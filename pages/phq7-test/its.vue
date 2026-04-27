@@ -305,11 +305,11 @@ export default {
     typeTag() {
       const types = {
         trust: { text: '信任评估', color: '#52c41a', icon: '/static/icons/trust.png' },
-        mood: { text: '情绪评估', color: '#FF6B81', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        mood: { text: '工作热情评估', color: '#FF6B81', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {

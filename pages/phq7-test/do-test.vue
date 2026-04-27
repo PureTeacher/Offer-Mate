@@ -103,7 +103,7 @@
           </view>
           
           <view class="level-section">
-            <text class="level-label">抑郁程度</text>
+            <text class="level-label">疲惫层级</text>
             <text class="level-value" :class="getLevelClass(resultData.depressionLevel)">{{resultData.depressionLevel}}</text>
           </view>
           
@@ -268,11 +268,11 @@ export default {
     },
     typeTag() {
       const types = {
-        mood: { text: '情绪评估', color: '#FF6B81', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        mood: { text: '工作热情评估', color: '#FF6B81', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {
@@ -345,31 +345,31 @@ export default {
       // 计算总分
       const totalScore = this.answers.reduce((sum, a) => sum + (a ? a.score : 0), 0)
       
-      // 根据PHQ-9标准判断抑郁程度
+      // 根据PHQ-9标准判断疲惫层级
       let depressionLevel = ''
       let levelDescription = ''
       let suggestion = ''
       
       if (totalScore >= 0 && totalScore <= 4) {
-        depressionLevel = '无抑郁症状'
-        levelDescription = '您的心理健康状况良好，没有明显的抑郁症状。'
-        suggestion = '继续保持良好的生活习惯，定期关注自己的心理健康。'
+        depressionLevel = '状态极佳'
+        levelDescription = '您的求职工作状态非常好，没有明显的职业倦怠表现。'
+        suggestion = '继续保持良好的生活习惯，定期关注自己的职业心态健康。'
       } else if (totalScore >= 5 && totalScore <= 9) {
-        depressionLevel = '轻度抑郁'
-        levelDescription = '您可能有一些轻微的抑郁症状，建议关注自己的情绪变化。'
-        suggestion = '建议多参与社交活动，保持规律作息，如症状持续可考虑寻求专业帮助。'
+        depressionLevel = '轻度疲惫'
+        levelDescription = '您可能有一些轻微的职业倦怠表现，建议关注自己的情绪变化。'
+        suggestion = '建议多参与社交活动，保持规律作息，如状态持续可考虑寻求专业帮助。'
       } else if (totalScore >= 10 && totalScore <= 14) {
-        depressionLevel = '中度抑郁'
-        levelDescription = '您有明显的抑郁症状，建议及时寻求专业帮助。'
-        suggestion = '建议尽快咨询心理医生或精神科医生，制定合适的治疗方案。'
+        depressionLevel = '中度承压'
+        levelDescription = '您有明显的职业倦怠表现，建议及时寻求专业帮助。'
+        suggestion = '建议尽快咨询职场顾问导师或求职指导专家，制定合适的指导提升方案。'
       } else if (totalScore >= 15 && totalScore <= 19) {
-        depressionLevel = '中重度抑郁'
-        levelDescription = '您的抑郁症状较为严重，强烈建议寻求专业治疗。'
-        suggestion = '请立即寻求专业心理医生或精神科医生的帮助，不要忽视这些症状。'
+        depressionLevel = '高压疲惫'
+        levelDescription = '您的职业倦怠表现较为严重，强烈建议寻求专业指导提升。'
+        suggestion = '请立即寻求专业职场顾问导师或求职指导专家的帮助，不要忽视这些状态。'
       } else if (totalScore >= 20 && totalScore <= 27) {
-        depressionLevel = '重度抑郁'
-        levelDescription = '您的抑郁症状非常严重，需要立即寻求专业治疗。'
-        suggestion = '请立即联系专业心理医生或精神科医生，必要时可考虑住院治疗。'
+        depressionLevel = '急需调整'
+        levelDescription = '您的职业倦怠表现非常严重，需要立即寻求专业指导提升。'
+        suggestion = '请立即联系专业职场顾问导师或求职指导专家，必要时可考虑离职进行全面充电。'
       }
       
       // 设置结果数据并显示弹窗
@@ -415,7 +415,7 @@ restartTest() {
   this.scrollToTop()
 },
 getLevelClass(level) {
-  if (level.includes('无抑郁')) return 'level-normal'
+  if (level.includes('状态积极')) return 'level-normal'
   if (level.includes('轻度')) return 'level-mild'
   if (level.includes('中度')) return 'level-moderate'
   if (level.includes('中重度')) return 'level-severe'
@@ -425,7 +425,7 @@ getLevelClass(level) {
 // 保存测试结果到数据库
 async saveTestResultToDatabase() {
   const requestData = {
-    questionnaireName: 'PHQ-9抑郁筛查量表',
+    questionnaireName: '职业性格特质筛查量表',
     questionnaireType: 'mood',
     score: this.resultData.totalScore,
     depressionLevel: this.resultData.depressionLevel,

@@ -96,7 +96,7 @@
           </view>
           
           <view class="level-section">
-            <text class="level-label">睡眠障碍程度</text>
+            <text class="level-label">作息失调程度</text>
             <text class="level-value" :class="getLevelClass(resultData.sleepDisorder)">{{resultData.sleepDisorder}}</text>
           </view>
           
@@ -125,7 +125,7 @@
 export default {
   data() {
     return {
-      themeColor: '#673AB7', // 主色调 - 深紫色代表睡眠障碍评估
+      themeColor: '#673AB7', // 主色调 - 深紫色代表作息失调评估
       answers: [],  // 初始化空数组
       questions: [
         {
@@ -272,12 +272,12 @@ export default {
     },
     typeTag() {
       const types = {
-        sleep: { text: '睡眠障碍', color: '#673AB7', icon: '/static/icons/sleep.png' },
-        mood: { text: '情绪评估', color: '#FFA500', icon: '/static/icons/mood.png' },
-        anxiety: { text: '焦虑评估', color: '#FFA500', icon: '/static/icons/anxiety.png' },
+        sleep: { text: '作息失调', color: '#673AB7', icon: '/static/icons/sleep.png' },
+        mood: { text: '工作热情评估', color: '#FFA500', icon: '/static/icons/mood.png' },
+        anxiety: { text: '压力管理', color: '#FFA500', icon: '/static/icons/anxiety.png' },
         // 更多类型...
       }
-      return types[this.currentQuestion.type] || { text: '心理测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
+      return types[this.currentQuestion.type] || { text: '职场测评', color: this.themeColor, icon: '/static/icons/psychology.png' }
     }
   },
   methods: {
@@ -350,27 +350,27 @@ export default {
       // 计算总分
       const totalScore = this.answers.reduce((sum, a) => sum + (a ? a.score : 0), 0)
       
-      // 根据SDS标准判断睡眠障碍程度
+      // 根据SDS标准判断作息失调程度
       let sleepDisorder = ''
       let levelDescription = ''
       let suggestion = ''
       
       if (totalScore >= 0 && totalScore <= 5) {
-        sleepDisorder = '无睡眠障碍'
-        levelDescription = '您的睡眠状况良好，没有明显的睡眠障碍症状。'
+        sleepDisorder = '无作息失调'
+        levelDescription = '您的睡眠状况良好，没有明显的作息失调状态。'
         suggestion = '继续保持良好的睡眠习惯，规律作息，维持健康的睡眠环境。'
       } else if (totalScore >= 6 && totalScore <= 10) {
-        sleepDisorder = '轻度睡眠障碍'
-        levelDescription = '您存在一些轻微的睡眠障碍症状，但影响不大。'
+        sleepDisorder = '轻度作息失调'
+        levelDescription = '您存在一些轻微的作息失调状态，但影响不大。'
         suggestion = '建议改善睡眠环境，建立规律的睡眠时间，避免睡前刺激性活动，必要时可寻求专业帮助。'
       } else if (totalScore >= 11 && totalScore <= 15) {
-        sleepDisorder = '中度睡眠障碍'
-        levelDescription = '您存在明显的睡眠障碍症状，对日常生活有一定影响。'
-        suggestion = '建议寻求专业睡眠医生的帮助，进行睡眠评估，学习睡眠卫生知识，必要时可考虑药物治疗。'
+        sleepDisorder = '中度作息失调'
+        levelDescription = '您存在明显的作息失调状态，对日常生活有一定影响。'
+        suggestion = '建议寻求时间管理导师的帮助，进行时间管理评估，学习时间管理精力分配知识，必要时可考虑系统脱产培训。'
       } else if (totalScore >= 16 && totalScore <= 30) {
-        sleepDisorder = '重度睡眠障碍'
-        levelDescription = '您存在严重的睡眠障碍症状，严重影响日常生活和身体健康。'
-        suggestion = '强烈建议立即寻求专业睡眠医生的帮助，进行全面的睡眠评估和治疗，制定个性化的睡眠改善计划。'
+        sleepDisorder = '重度作息失调'
+        levelDescription = '您存在严重的作息失调状态，严重影响日常生活和面试状态。'
+        suggestion = '强烈建议立即寻求时间管理导师的帮助，进行全面的时间管理评估和指导提升，制定个性化的睡眠改善计划。'
       }
       
       // 设置结果数据并显示弹窗
@@ -415,16 +415,16 @@ export default {
       this.scrollToTop()
     },
     getLevelClass(level) {
-      if (level.includes('无睡眠障碍')) return 'level-normal'
-      if (level.includes('轻度睡眠障碍')) return 'level-mild'
-      if (level.includes('中度睡眠障碍')) return 'level-moderate'
-      if (level.includes('重度睡眠障碍')) return 'level-severe'
+      if (level.includes('无作息失调')) return 'level-normal'
+      if (level.includes('轻度作息失调')) return 'level-mild'
+      if (level.includes('中度作息失调')) return 'level-moderate'
+      if (level.includes('重度作息失调')) return 'level-severe'
       return 'level-normal'
     },
     // 保存测试结果到数据库
     async saveTestResultToDatabase() {
       const requestData = {
-        questionnaireName: 'SDS睡眠障碍量表',
+        questionnaireName: 'SDS作息失调量表',
         questionnaireType: 'sleep',
         score: this.resultData.totalScore,
         depressionLevel: this.resultData.depressionLevel,
