@@ -462,10 +462,10 @@ export default {
         // 保存测试结果到数据库
         async saveTestResultToDatabase() {
             const requestData = {
-                questionnaireName: "GAD-7广泛性紧张障碍量表",
-                questionnaireType: "mood",
+                questionnaireName: "职业目标可行性评估",
+                questionnaireType: "planning",
                 score: this.resultData.totalScore,
-                depressionLevel: this.resultData.anxietyLevel,
+                depressionLevel: this.resultData.careerLevel,
                 levelDescription: this.resultData.levelDescription,
                 resultData: {
                     answers: this.answers,

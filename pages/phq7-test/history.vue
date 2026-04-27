@@ -26,31 +26,31 @@
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'planning' }"
-                    @click="filterByType('planning')"
+                    :class="{ active: currentFilter === 'mood' }"
+                    @click="filterByType('mood')"
                 >
-                    <text>🎯 职业规划</text>
+                    <text>🎯 目标规划</text>
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'development' }"
-                    @click="filterByType('development')"
+                    :class="{ active: currentFilter === 'stress' }"
+                    @click="filterByType('stress')"
                 >
-                    <text>🚀 职业发展</text>
+                    <text>💪 竞争力评估</text>
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'skills' }"
-                    @click="filterByType('skills')"
+                    :class="{ active: currentFilter === 'social' }"
+                    @click="filterByType('social')"
                 >
-                    <text>💡 职业技能</text>
+                    <text>🌱 成长与技能</text>
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'transformation' }"
-                    @click="filterByType('transformation')"
+                    :class="{ active: currentFilter === 'sleep' }"
+                    @click="filterByType('sleep')"
                 >
-                    <text>🔄 职业转型</text>
+                    <text>🚀 准备与转型</text>
                 </view>
             </scroll-view>
         </view>
@@ -127,7 +127,7 @@
             <view class="detail-content" @click.stop>
                 <view class="detail-header">
                     <text class="detail-title">{{
-                        selectedItem.questionnaireName
+                        getTestDisplayName(selectedItem.questionnaireName)
                     }}</text>
                     <view class="close-btn" @click="closeDetail">×</view>
                 </view>
@@ -196,33 +196,33 @@ export default {
                 return this.results;
             }
             return this.results.filter((item) => {
-                const testType = item.questionnaireName.toLowerCase();
-                if (this.currentFilter === "planning") {
+                const testName = item.questionnaireName.toLowerCase();
+                if (this.currentFilter === "mood") {
                     return (
-                        testType.includes("phq") ||
-                        testType.includes("gad") ||
-                        testType.includes("定位") ||
-                        testType.includes("目标")
+                        testName.includes("定位") ||
+                        testName.includes("目标") ||
+                        testName.includes("phq") ||
+                        testName.includes("gad")
                     );
-                } else if (this.currentFilter === "development") {
+                } else if (this.currentFilter === "stress") {
                     return (
-                        testType.includes("cpss") ||
-                        testType.includes("ucla") ||
-                        testType.includes("竞争") ||
-                        testType.includes("成长")
+                        testName.includes("竞争") ||
+                        testName.includes("cpss") ||
+                        testName.includes("pss")
                     );
-                } else if (this.currentFilter === "skills") {
+                } else if (this.currentFilter === "social") {
                     return (
-                        testType.includes("its") ||
-                        testType.includes("psqi") ||
-                        testType.includes("技能") ||
-                        testType.includes("准备")
+                        testName.includes("成长") ||
+                        testName.includes("技能") ||
+                        testName.includes("ucla") ||
+                        testName.includes("its")
                     );
-                } else if (this.currentFilter === "transformation") {
+                } else if (this.currentFilter === "sleep") {
                     return (
-                        testType.includes("sds") ||
-                        testType.includes("转型") ||
-                        testType.includes("风险")
+                        testName.includes("准备") ||
+                        testName.includes("转型") ||
+                        testName.includes("psqi") ||
+                        testName.includes("sds")
                     );
                 }
                 return true;
@@ -275,13 +275,21 @@ export default {
 
         getTestName(testName) {
             const nameMap = {
-                "职业定位自测": "职业定位自测",
-                "职业目标可行性评估": "职业目标可行性评估",
-                "职业竞争力评估": "职业竞争力评估",
-                "职业成长空间评估": "职业成长空间评估",
-                "核心职业技能测评": "核心职业技能测评",
-                "职业发展准备度测评": "职业发展准备度测评",
-                "职业转型风险评估": "职业转型风险评估",
+                职业定位自测: "职业定位自测",
+                职业目标可行性评估: "职业目标可行性评估",
+                职业竞争力评估: "职业竞争力评估",
+                职业成长空间评估: "职业成长空间评估",
+                核心职业技能测评: "核心职业技能测评",
+                职业发展准备度测评: "职业发展准备度测评",
+                职业转型风险评估: "职业转型风险评估",
+                // 兼容旧数据
+                职业性格特质筛查量表: "职业定位自测",
+                职场压力耐受度筛查量表: "职业竞争力评估",
+                CPSS创伤后应激量表: "职业竞争力评估",
+                职场归属感与团队融入量表: "职业成长空间评估",
+                ITS人际信任量表: "核心职业技能测评",
+                PSQI求职期作息与精力评估表: "职业发展准备度测评",
+                SDS作息失调量表: "职业转型风险评估",
             };
             return nameMap[testName] || testName;
         },
@@ -292,7 +300,7 @@ export default {
 
         getTestEmoji(testName) {
             const name = testName.toLowerCase();
-            if (name.includes("定位") || name.includes("phq")) return "🎯";
+            if (name.includes("职业定位") || name.includes("phq") || name.includes("do-test")) return "🎯";
             if (name.includes("目标") || name.includes("gad")) return "✅";
             if (name.includes("竞争") || name.includes("cpss")) return "💪";
             if (name.includes("成长") || name.includes("ucla")) return "🌱";
@@ -300,7 +308,7 @@ export default {
             if (name.includes("准备") || name.includes("psqi")) return "🚀";
             if (name.includes("转型") || name.includes("sds")) return "⚖️";
             return "📊";
-        }
+        },
 
         formatDate(dateStr) {
             const date = new Date(dateStr);
@@ -325,27 +333,30 @@ export default {
 
         getScoreClass(level) {
             if (!level) return "score-normal";
+            // 新的职业评估等级判断
             if (
-                level.includes("良好") ||
-                level.includes("正常") ||
-                level.includes("无")
+                level.includes("优秀") ||
+                level.includes("极低") ||
+                level.includes("完整")
             )
                 return "score-good";
             if (
-                level.includes("轻度") ||
-                level.includes("一般") ||
-                level.includes("中等")
+                level.includes("较好") ||
+                level.includes("较清晰") ||
+                level.includes("初步") ||
+                level.includes("较低")
             )
                 return "score-mild";
             if (
-                level.includes("中度") ||
-                level.includes("较差") ||
-                level.includes("较高")
+                level.includes("较强") ||
+                level.includes("中等") ||
+                level.includes("基本") ||
+                level.includes("一般")
             )
                 return "score-moderate";
             if (
-                level.includes("重度") ||
-                level.includes("很差") ||
+                level.includes("待") ||
+                level.includes("高") ||
                 level.includes("高")
             )
                 return "score-severe";
@@ -355,29 +366,27 @@ export default {
         getScoreText(level) {
             if (!level) return "正常";
             if (
-                level.includes("良好") ||
-                level.includes("正常") ||
-                level.includes("无")
+                level.includes("优秀") ||
+                level.includes("极低") ||
+                level.includes("完整")
+            )
+                return "优秀";
+            if (
+                level.includes("较好") ||
+                level.includes("较清晰") ||
+                level.includes("初步") ||
+                level.includes("较低")
             )
                 return "良好";
             if (
-                level.includes("轻度") ||
-                level.includes("一般") ||
-                level.includes("中等")
+                level.includes("较强") ||
+                level.includes("中等") ||
+                level.includes("基本") ||
+                level.includes("一般")
             )
                 return "一般";
-            if (
-                level.includes("中度") ||
-                level.includes("较差") ||
-                level.includes("较高")
-            )
-                return "较差";
-            if (
-                level.includes("重度") ||
-                level.includes("很差") ||
-                level.includes("高")
-            )
-                return "严重";
+            if (level.includes("待") || level.includes("高"))
+                return "需改进";
             return "正常";
         },
 
