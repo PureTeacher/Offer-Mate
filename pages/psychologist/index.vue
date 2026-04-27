@@ -247,9 +247,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 1286,
                     isOnline: true,
-                    specialties: ["职场焦虑", "职业倦怠", "情感咨询"],
+                    specialties: ["职业定位", "职业发展规划", "职业倦怠调适"],
                     introduction:
-                        "专注于认知行为疗法，帮助学员建立积极思维模式，擅长处理焦虑和抑郁问题。",
+                        "职业规划专家，通过科学的职业测评和深度访谈，帮助学员发现自己的职业天赋，制定清晰的职业发展路线。",
                     background:
                         "北京大学管理学博士，中科院职业研究院博士后，国家二级职业导师，从事职业咨询8年。",
                     consultationCount: 3240,
@@ -268,9 +268,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 2156,
                     isOnline: false,
-                    specialties: ["家庭治疗", "职业转型", "亲子关系"],
+                    specialties: ["职业转型", "中年职业危机", "职业回归"],
                     introduction:
-                        "系统家庭治疗专家，擅长解决家庭矛盾和亲子关系问题，帮助家庭重建和谐关系。",
+                        "职业转型专家，具有丰富的职业转行经验，擅长帮助职场人士平稳过渡职业转换期，规避转换风险。",
                     background:
                         "清华大学管理学硕士，美国加州大学访问学者，家庭辅导师认证，从业12年。",
                     consultationCount: 4560,
@@ -289,9 +289,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 1890,
                     isOnline: true,
-                    specialties: ["学习成长", "升学就业", "学习障碍"],
+                    specialties: ["职业目标确立", "升学就业指导", "校园招聘指导"],
                     introduction:
-                        "学习成长专家，温柔耐心，擅长处理儿童和青少年的职业发展问题，深受家长信任。",
+                        "应届毕业生职业指导专家，帮助学生清晰职业方向，准备校园招聘，平稳过渡校园到职场的转变。",
                     background:
                         "北京师范大学管理学博士，学习成长研究所研究员，沙盘游戏辅导师，从业10年。",
                     consultationCount: 2890,
@@ -310,9 +310,9 @@ export default {
                     rating: 4.7,
                     reviewCount: 3240,
                     isOnline: true,
-                    specialties: ["职业转型", "PTSD", "职业危机应对"],
+                    specialties: ["职业危机应对", "职业挫折恢复", "失业心态调整"],
                     introduction:
-                        "职业转型专家，具有丰富的职业危机应对经验，帮助学员走出职业挫折，重建生活信心。",
+                        "职业危机干预专家，经验丰富，帮助失业、被裁员或面临职业困境的学员快速调整心态，重新规划职业方向。",
                     background:
                         "复旦大学管理学博士，国际职业转型师认证，职业危机应对专家，从业15年。",
                     consultationCount: 5670,
@@ -331,9 +331,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 1560,
                     isOnline: true,
-                    specialties: ["情感咨询", "恋爱问题", "人际关系"],
+                    specialties: ["职场人际关系", "职场沟通技巧", "领导力发展"],
                     introduction:
-                        "情感咨询专家，擅长处理恋爱关系和人际交往问题，帮助来访者建立健康的人际关系。",
+                        "职场人际关系专家，帮助职场人士处理复杂的人际关系，提升沟通效能，建立健康的工作关系。",
                     background:
                         "华东师范大学管理学硕士，情感导师认证，人际关系辅导师，从业7年。",
                     consultationCount: 2130,
@@ -352,9 +352,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 4120,
                     isOnline: false,
-                    specialties: ["成熟职场", "认知障碍", "临终关怀"],
+                    specialties: ["高管coaching", "职业生涯后期规划", "精英职场发展"],
                     introduction:
-                        "成熟职场专家，关注老年人的职业发展，擅长处理认知障碍和临终关怀问题。",
+                        "高级职业顾问，专注于企业中高层和资深职场人士的职业发展，提供高端coaching服务。",
                     background:
                         "中山大学管理学博士，老年职业发展研究中心所长，认知行为辅导师，从业18年。",
                     consultationCount: 6780,
@@ -373,9 +373,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 1980,
                     isOnline: true,
-                    specialties: ["职场发展", "压力管理", "职业规划"],
+                    specialties: ["职业发展路径设计", "职业压力管理", "工作生活平衡"],
                     introduction:
-                        "职场发展专家，帮助职场人士处理工作压力，提升职业幸福感，实现职业发展。",
+                        "职场成长导师，专长于制定个性化的职业发展计划，帮助职场人士管理职业压力，实现可持续发展。",
                     background:
                         "中国人民大学管理学硕士，职业规划师认证，压力管理专家，从业9年。",
                     consultationCount: 2670,
@@ -394,9 +394,9 @@ export default {
                     rating: 4.7,
                     reviewCount: 2890,
                     isOnline: true,
-                    specialties: ["习惯重塑", "行为矫正", "职业重建"],
+                    specialties: ["职业习惯养成", "职业能力重建", "职场快速适应"],
                     introduction:
-                        "习惯重塑专家，帮助学员戒除各种成瘾行为，重建健康的生活方式。",
+                        "职业习惯与能力重塑专家，帮助职场人士养成良好职业习惯，快速适应新职位，重建职业能力体系。",
                     background:
                         "武汉大学管理学博士，习惯重塑师认证，行为治疗专家，从业11年。",
                     consultationCount: 3890,
@@ -415,9 +415,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 2340,
                     isOnline: false,
-                    specialties: ["女职场关系", "职业回归", "生涯转折"],
+                    specialties: ["女性职业发展", "职业回归指导", "母职平衡"],
                     introduction:
-                        "女职场关系专家，关注女性各个阶段的职业发展，特别擅长处理职业回归和生涯转折。",
+                        "女性职业发展专家，深入理解女性职业挑战，专长于协助女性处理职业回归、家庭与事业平衡等问题。",
                     background:
                         "北京协和医学院管理学硕士，女职场关系研究所研究员，产后职业辅导师，从业10年。",
                     consultationCount: 3120,
@@ -436,9 +436,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 1760,
                     isOnline: true,
-                    specialties: ["社交恐惧", "强迫症", "恐惧症"],
+                    specialties: ["求职焦虑调适", "面试心理建设", "职场自信提升"],
                     introduction:
-                        "焦虑障碍专家，擅长处理各种焦虑相关疾病，帮助学员克服恐惧，恢复正常生活。",
+                        "求职心理咨询专家，专长于缓解求职焦虑，帮助学员建立面试自信，在关键时刻展现最佳状态。",
                     background:
                         "上海交通大学管理学博士，焦虑障碍辅导师认证，暴露疗法专家，从业8年。",
                     consultationCount: 2450,
@@ -457,9 +457,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 1420,
                     isOnline: true,
-                    specialties: ["艺术治疗", "音乐治疗", "表达性治疗"],
+                    specialties: ["职业兴趣探索", "天赋发现", "优势识别"],
                     introduction:
-                        "艺术辅导师，通过艺术创作帮助学员表达内心情感，特别适合儿童和青少年。",
+                        "职业兴趣与天赋测评专家，通过创意工作坊和深度评估，帮助学员发现职业天赋和优势所在。",
                     background:
                         "中央美术学院管理学硕士，艺术辅导师认证，音乐辅导师，从业6年。",
                     consultationCount: 1890,
@@ -478,9 +478,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 3560,
                     isOnline: false,
-                    specialties: ["职业复盘", "行为模式", "深度职业辅导"],
+                    specialties: ["职业生涯复盘", "职业决策分析", "深度职业咨询"],
                     introduction:
-                        "职业复盘专家，擅长深度职业辅导，帮助学员探索潜意识，解决深层职业发展问题。",
+                        "资深职业咨询师，善于进行深度的职业生涯复盘，帮助学员分析职业决策的根源，做出明智选择。",
                     background:
                         "北京大学管理学博士，职业复盘学会会员，国际职业复盘师认证，从业16年。",
                     consultationCount: 5230,
@@ -499,9 +499,9 @@ export default {
                     rating: 4.7,
                     reviewCount: 980,
                     isOnline: true,
-                    specialties: ["正念治疗", "冥想指导", "压力缓解"],
+                    specialties: ["职业韧性建设", "职场压力管理", "职业心理调适"],
                     introduction:
-                        "正念辅导师，通过正念冥想帮助学员缓解压力，提升职业韧性，改善生活质量。",
+                        "职业心理建设专家，帮助职场人士培养职业韧性，应对工作压力与挑战，保持职业健康心态。",
                     background:
                         "南京大学管理学硕士，正念辅导师认证，冥想指导师，从业5年。",
                     consultationCount: 1560,
@@ -520,9 +520,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 2670,
                     isOnline: true,
-                    specialties: ["团体治疗", "人际关系", "社交技能训练"],
+                    specialties: ["团队协作能力", "跨部门沟通", "领导力培养"],
                     introduction:
-                        "团体治疗专家，通过团体活动帮助学员改善人际关系，提升社交技能。",
+                        "团队建设与领导力专家，通过创意团建活动帮助职场人士提升团队协作能力和领导力水平。",
                     background:
                         "华中师范大学管理学博士，团体辅导师认证，社交技能训练师，从业13年。",
                     consultationCount: 3780,
@@ -541,9 +541,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 2980,
                     isOnline: false,
-                    specialties: ["睡眠障碍", "失眠治疗", "生物反馈"],
+                    specialties: ["工作效能优化", "职业时间管理", "职场精力管理"],
                     introduction:
-                        "睡眠专家，帮助学员解决各种睡眠问题，通过生物反馈技术改善睡眠质量。",
+                        "职业效能与时间管理专家，帮助职场人士提升工作效能，科学管理精力，实现职业生产力最大化。",
                     background:
                         "北京师范大学管理学博士，睡眠医学专家，生物反馈辅导师，从业11年。",
                     consultationCount: 4120,
@@ -562,9 +562,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 3340,
                     isOnline: true,
-                    specialties: ["职场关系", "沟通障碍", "关系沟通"],
+                    specialties: ["职场沟通艺术", "跨部门协调", "冲突管理"],
                     introduction:
-                        "职场关系专家，专业处理各种职场关系问题，帮助学员建立健康的性观念。",
+                        "职场沟通与关系协调专家，专长于处理复杂职场关系，帮助职场人士掌握高效沟通技巧。",
                     background:
                         "复旦大学管理学博士，性职业辅导师认证，性医学专家，从业14年。",
                     consultationCount: 4560,
@@ -583,9 +583,9 @@ export default {
                     rating: 4.7,
                     reviewCount: 1230,
                     isOnline: true,
-                    specialties: ["饮食障碍", "身体意象", "自我接纳"],
+                    specialties: ["职业形象管理", "职场礼仪指导", "个人品牌打造"],
                     introduction:
-                        "饮食障碍专家，帮助学员建立健康的身体意象，改善饮食关系，提升自我接纳。",
+                        "职业形象与品牌打造顾问，帮助职场人士提升职业形象，构建个人品牌，增强职场竞争力。",
                     background:
                         "浙江大学管理学硕士，饮食障碍辅导师认证，身体意象专家，从业6年。",
                     consultationCount: 1780,
@@ -604,9 +604,9 @@ export default {
                     rating: 4.9,
                     reviewCount: 4560,
                     isOnline: false,
-                    specialties: ["职业评估", "智力测试", "人格测试"],
+                    specialties: ["职业测评与诊断", "职业能力评估", "发展方向指导"],
                     introduction:
-                        "职业评估专家，擅长各种职业测评和评估，为学员提供准确的发展诊断。",
+                        "资深职业评估专家，运用国际权威的职业测评工具，为学员提供全面准确的职业诊断与发展指导。",
                     background:
                         "中科院职业研究院博士，职业测评专家，国际职业评估师认证，从业20年。",
                     consultationCount: 6780,
@@ -625,9 +625,9 @@ export default {
                     rating: 4.8,
                     reviewCount: 2100,
                     isOnline: true,
-                    specialties: ["创伤后成长", "职业韧性", "积极成长"],
+                    specialties: ["职业挫折恢复", "职业目标重置", "积极心态建设"],
                     introduction:
-                        "积极成长专家，帮助学员从创伤中成长，提升职业韧性，发现生活的意义。",
+                        "职业成长与心态建设专家，帮助遭遇职业挫折的学员积极调整，重新发现职业意义与价值。",
                     background:
                         "清华大学管理学博士，积极成长研究员，创伤后成长专家，从业9年。",
                     consultationCount: 2890,
@@ -646,9 +646,9 @@ export default {
                     rating: 4.7,
                     reviewCount: 2450,
                     isOnline: true,
-                    specialties: ["信息过载", "拖延问题", "数字健康"],
+                    specialties: ["职场效率提升", "优先级管理", "专注力提升"],
                     introduction:
-                        "数字健康专家，帮助学员摆脱网络和游戏成瘾，建立健康的数字生活方式。",
+                        "职场效率与专注力提升专家，帮助职场人士摆脱信息过载和拖延习惯，建立高效的工作节奏。",
                     background:
                         "北京理工大学管理学博士，数字健康专家，网络习惯重塑师，从业12年。",
                     consultationCount: 3450,
