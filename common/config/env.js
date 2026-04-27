@@ -2,23 +2,23 @@
 const env = "local"
 
 // const prod = {
-// baseUrl: 'http://localhost:9001/alibaba-ai/v1', // 生产环境'
+// baseUrl: 'http://localhost:9002/offer-mate/v1', // 生产环境'
 // }
 // const dev = {
-// baseUrl: 'http://localhost:7001/alibaba-ai/v1', // 开发环境'
+// baseUrl: 'http://localhost:7002/offer-mate/v1', // 开发环境'
 // }
 // const local = {
-// baseUrl: 'http://localhost:8001/alibaba-ai/v1', // 本地环境'
+// baseUrl: 'http://localhost:8002/offer-mate/v1', // 本地环境'
 // }
 
 const prod = {
-baseUrl: 'http://47.94.217.78:7001/alibaba-ai/v1', // 生产环境'
+baseUrl: 'http://47.94.217.78:7002/offer-mate/v1', // 生产环境'
 }
 const dev = {
-baseUrl: 'http://47.94.217.78:7001/alibaba-ai/v1', // 开发环境'
+baseUrl: 'http://47.94.217.78:7002/offer-mate/v1', // 开发环境'
 }
 const local = {
-baseUrl: 'http://47.94.217.78:7001/alibaba-ai/v1', // 本地环境'
+baseUrl: 'http://47.94.217.78:7002/offer-mate/v1', // 本地环境'
 }
 
 const config = {

@@ -5,16 +5,16 @@
                 <text class="section-title">应用信息</text>
                 <view class="item">
                     <text class="label">应用名称</text>
-                    <text class="value">职途引航</text>
+                    <text class="value">择途</text>
                 </view>
                 <view class="item">
                     <text class="label">版本号</text>
-                    <text class="value">1.3.0</text>
+                    <text class="value">1.1.0</text>
                 </view>
                 <view class="item">
                     <text class="label">描述</text>
                     <text class="value">
-                        职途引航是一款专业的职业发展管理应用，致力于为用户提供科学、便捷的职业成长服务。
+                        择途是一款专业的职业发展管理应用，致力于为用户提供科学、便捷的职业成长服务。
                     </text>
                 </view>
             </view>
@@ -44,7 +44,7 @@
 
             <view class="footer">
                 <text class="footer-text"
-                    >© 2026 Warm-Mate. All rights reserved.</text
+                    >© 2026 择途. All rights reserved.</text
                 >
             </view>
         </view>

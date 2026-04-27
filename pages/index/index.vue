@@ -4,7 +4,7 @@
         <view class="header">
             <view class="header-content">
                 <view class="header-top">
-                    <text class="sunshine-title">职途引航</text>
+                    <text class="sunshine-title">择途</text>
                     <view class="deco-dot"></view>
                 </view>
                 <text class="header-subtitle">先评估，再匹配，后成长</text>
