@@ -300,7 +300,12 @@ export default {
 
         getTestEmoji(testName) {
             const name = testName.toLowerCase();
-            if (name.includes("职业定位") || name.includes("phq") || name.includes("do-test")) return "🎯";
+            if (
+                name.includes("职业定位") ||
+                name.includes("phq") ||
+                name.includes("do-test")
+            )
+                return "🎯";
             if (name.includes("目标") || name.includes("gad")) return "✅";
             if (name.includes("竞争") || name.includes("cpss")) return "💪";
             if (name.includes("成长") || name.includes("ucla")) return "🌱";
@@ -385,8 +390,7 @@ export default {
                 level.includes("一般")
             )
                 return "一般";
-            if (level.includes("待") || level.includes("高"))
-                return "需改进";
+            if (level.includes("待") || level.includes("高")) return "需改进";
             return "正常";
         },
 
