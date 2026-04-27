@@ -68,7 +68,7 @@
                     <text class="menu-icon">ℹ️</text>
                     <view class="menu-text">
                         <text class="menu-title">关于我们</text>
-                        <text class="menu-desc">了解"暖愈心伴"信息</text>
+                        <text class="menu-desc">了解"择途"信息</text>
                     </view>
                 </view>
                 <text class="menu-arrow">&gt;</text>

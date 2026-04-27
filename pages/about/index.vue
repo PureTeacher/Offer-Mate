@@ -23,7 +23,7 @@
                 <text class="section-title">联系我们</text>
                 <view class="item">
                     <text class="label">邮箱</text>
-                    <text class="value">support@warmmate.com</text>
+                    <text class="value">support@offermate.com</text>
                 </view>
                 <view class="item">
                     <text class="label">电话</text>
@@ -147,4 +147,3 @@ export default {
     color: #999;
 }
 </style>
-

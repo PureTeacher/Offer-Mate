@@ -81,7 +81,7 @@
 export default {
     data() {
         return {
-            title: "暖愈心伴",
+            title: "择途",
             modalShow: false,
             retrievePwd: {
                 username: "",
