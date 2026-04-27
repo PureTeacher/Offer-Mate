@@ -289,7 +289,11 @@ export default {
                     rating: 4.9,
                     reviewCount: 1890,
                     isOnline: true,
-                    specialties: ["职业目标确立", "升学就业指导", "校园招聘指导"],
+                    specialties: [
+                        "职业目标确立",
+                        "升学就业指导",
+                        "校园招聘指导",
+                    ],
                     introduction:
                         "应届毕业生职业指导专家，帮助学生清晰职业方向，准备校园招聘，平稳过渡校园到职场的转变。",
                     background:
@@ -310,7 +314,11 @@ export default {
                     rating: 4.7,
                     reviewCount: 3240,
                     isOnline: true,
-                    specialties: ["职业危机应对", "职业挫折恢复", "失业心态调整"],
+                    specialties: [
+                        "职业危机应对",
+                        "职业挫折恢复",
+                        "失业心态调整",
+                    ],
                     introduction:
                         "职业危机干预专家，经验丰富，帮助失业、被裁员或面临职业困境的学员快速调整心态，重新规划职业方向。",
                     background:
@@ -352,7 +360,11 @@ export default {
                     rating: 4.9,
                     reviewCount: 4120,
                     isOnline: false,
-                    specialties: ["高管coaching", "职业生涯后期规划", "精英职场发展"],
+                    specialties: [
+                        "高管coaching",
+                        "职业生涯后期规划",
+                        "精英职场发展",
+                    ],
                     introduction:
                         "高级职业顾问，专注于企业中高层和资深职场人士的职业发展，提供高端coaching服务。",
                     background:
@@ -373,7 +385,11 @@ export default {
                     rating: 4.8,
                     reviewCount: 1980,
                     isOnline: true,
-                    specialties: ["职业发展路径设计", "职业压力管理", "工作生活平衡"],
+                    specialties: [
+                        "职业发展路径设计",
+                        "职业压力管理",
+                        "工作生活平衡",
+                    ],
                     introduction:
                         "职场成长导师，专长于制定个性化的职业发展计划，帮助职场人士管理职业压力，实现可持续发展。",
                     background:
@@ -394,7 +410,11 @@ export default {
                     rating: 4.7,
                     reviewCount: 2890,
                     isOnline: true,
-                    specialties: ["职业习惯养成", "职业能力重建", "职场快速适应"],
+                    specialties: [
+                        "职业习惯养成",
+                        "职业能力重建",
+                        "职场快速适应",
+                    ],
                     introduction:
                         "职业习惯与能力重塑专家，帮助职场人士养成良好职业习惯，快速适应新职位，重建职业能力体系。",
                     background:
@@ -436,7 +456,11 @@ export default {
                     rating: 4.8,
                     reviewCount: 1760,
                     isOnline: true,
-                    specialties: ["求职焦虑调适", "面试心理建设", "职场自信提升"],
+                    specialties: [
+                        "求职焦虑调适",
+                        "面试心理建设",
+                        "职场自信提升",
+                    ],
                     introduction:
                         "求职心理咨询专家，专长于缓解求职焦虑，帮助学员建立面试自信，在关键时刻展现最佳状态。",
                     background:
@@ -478,7 +502,11 @@ export default {
                     rating: 4.9,
                     reviewCount: 3560,
                     isOnline: false,
-                    specialties: ["职业生涯复盘", "职业决策分析", "深度职业咨询"],
+                    specialties: [
+                        "职业生涯复盘",
+                        "职业决策分析",
+                        "深度职业咨询",
+                    ],
                     introduction:
                         "资深职业咨询师，善于进行深度的职业生涯复盘，帮助学员分析职业决策的根源，做出明智选择。",
                     background:
@@ -499,7 +527,11 @@ export default {
                     rating: 4.7,
                     reviewCount: 980,
                     isOnline: true,
-                    specialties: ["职业韧性建设", "职场压力管理", "职业心理调适"],
+                    specialties: [
+                        "职业韧性建设",
+                        "职场压力管理",
+                        "职业心理调适",
+                    ],
                     introduction:
                         "职业心理建设专家，帮助职场人士培养职业韧性，应对工作压力与挑战，保持职业健康心态。",
                     background:
@@ -541,7 +573,11 @@ export default {
                     rating: 4.9,
                     reviewCount: 2980,
                     isOnline: false,
-                    specialties: ["工作效能优化", "职业时间管理", "职场精力管理"],
+                    specialties: [
+                        "工作效能优化",
+                        "职业时间管理",
+                        "职场精力管理",
+                    ],
                     introduction:
                         "职业效能与时间管理专家，帮助职场人士提升工作效能，科学管理精力，实现职业生产力最大化。",
                     background:
@@ -583,7 +619,11 @@ export default {
                     rating: 4.7,
                     reviewCount: 1230,
                     isOnline: true,
-                    specialties: ["职业形象管理", "职场礼仪指导", "个人品牌打造"],
+                    specialties: [
+                        "职业形象管理",
+                        "职场礼仪指导",
+                        "个人品牌打造",
+                    ],
                     introduction:
                         "职业形象与品牌打造顾问，帮助职场人士提升职业形象，构建个人品牌，增强职场竞争力。",
                     background:
@@ -604,7 +644,11 @@ export default {
                     rating: 4.9,
                     reviewCount: 4560,
                     isOnline: false,
-                    specialties: ["职业测评与诊断", "职业能力评估", "发展方向指导"],
+                    specialties: [
+                        "职业测评与诊断",
+                        "职业能力评估",
+                        "发展方向指导",
+                    ],
                     introduction:
                         "资深职业评估专家，运用国际权威的职业测评工具，为学员提供全面准确的职业诊断与发展指导。",
                     background:
@@ -625,7 +669,11 @@ export default {
                     rating: 4.8,
                     reviewCount: 2100,
                     isOnline: true,
-                    specialties: ["职业挫折恢复", "职业目标重置", "积极心态建设"],
+                    specialties: [
+                        "职业挫折恢复",
+                        "职业目标重置",
+                        "积极心态建设",
+                    ],
                     introduction:
                         "职业成长与心态建设专家，帮助遭遇职业挫折的学员积极调整，重新发现职业意义与价值。",
                     background:
@@ -1257,4 +1305,3 @@ export default {
     }
 }
 </style>
-
