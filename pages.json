@@ -111,6 +111,14 @@
             }
         },
         {
+            "path": "pages/phq7-test/its",
+            "style": {
+                "navigationBarTitleText": "",
+                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarTextStyle": "white"
+            }
+        },
+        {
             "path": "pages/health/index",
             "style": {
                 "navigationBarTitleText": "",

@@ -26,31 +26,31 @@
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'mood' }"
-                    @click="filterByType('mood')"
+                    :class="{ active: currentFilter === 'planning' }"
+                    @click="filterByType('planning')"
                 >
-                    <text>🧭 兴趣</text>
+                    <text>🎯 职业规划</text>
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'stress' }"
-                    @click="filterByType('stress')"
+                    :class="{ active: currentFilter === 'development' }"
+                    @click="filterByType('development')"
                 >
-                    <text>⚡ 压力</text>
+                    <text>🚀 职业发展</text>
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'social' }"
-                    @click="filterByType('social')"
+                    :class="{ active: currentFilter === 'skills' }"
+                    @click="filterByType('skills')"
                 >
-                    <text>🤝 协作</text>
+                    <text>💡 职业技能</text>
                 </view>
                 <view
                     class="filter-item"
-                    :class="{ active: currentFilter === 'sleep' }"
-                    @click="filterByType('sleep')"
+                    :class="{ active: currentFilter === 'transformation' }"
+                    @click="filterByType('transformation')"
                 >
-                    <text>🎯 求职</text>
+                    <text>🔄 职业转型</text>
                 </view>
             </scroll-view>
         </view>
@@ -196,32 +196,33 @@ export default {
                 return this.results;
             }
             return this.results.filter((item) => {
-                const testName = item.questionnaireName.toLowerCase();
-                if (this.currentFilter === "mood") {
+                const testType = item.questionnaireName.toLowerCase();
+                if (this.currentFilter === "planning") {
                     return (
-                        testName.includes("疲倦") ||
-                        testName.includes("紧张") ||
-                        testName.includes("phq") ||
-                        testName.includes("gad")
+                        testType.includes("phq") ||
+                        testType.includes("gad") ||
+                        testType.includes("定位") ||
+                        testType.includes("目标")
                     );
-                } else if (this.currentFilter === "stress") {
+                } else if (this.currentFilter === "development") {
                     return (
-                        testName.includes("压力") ||
-                        testName.includes("cpss") ||
-                        testName.includes("pss")
+                        testType.includes("cpss") ||
+                        testType.includes("ucla") ||
+                        testType.includes("竞争") ||
+                        testType.includes("成长")
                     );
-                } else if (this.currentFilter === "social") {
+                } else if (this.currentFilter === "skills") {
                     return (
-                        testName.includes("孤独") ||
-                        testName.includes("信任") ||
-                        testName.includes("ucla") ||
-                        testName.includes("its")
+                        testType.includes("its") ||
+                        testType.includes("psqi") ||
+                        testType.includes("技能") ||
+                        testType.includes("准备")
                     );
-                } else if (this.currentFilter === "sleep") {
+                } else if (this.currentFilter === "transformation") {
                     return (
-                        testName.includes("睡眠") ||
-                        testName.includes("psqi") ||
-                        testName.includes("sds")
+                        testType.includes("sds") ||
+                        testType.includes("转型") ||
+                        testType.includes("风险")
                     );
                 }
                 return true;
@@ -274,13 +275,13 @@ export default {
 
         getTestName(testName) {
             const nameMap = {
-                "职业性格特质筛查量表": "疲倦评估",
-                "职场压力耐受度筛查量表": "压力管理",
-                CPSS创伤后应激量表: "创伤评估",
-                职场归属感与团队融入量表: "职场孤立感评估",
-                ITS人际信任量表: "人际信任量表",
-                PSQI求职期作息与精力评估表: "求职期作息与精力评估表",
-                SDS作息失调量表: "作息失调量表",
+                "职业定位自测": "职业定位自测",
+                "职业目标可行性评估": "职业目标可行性评估",
+                "职业竞争力评估": "职业竞争力评估",
+                "职业成长空间评估": "职业成长空间评估",
+                "核心职业技能测评": "核心职业技能测评",
+                "职业发展准备度测评": "职业发展准备度测评",
+                "职业转型风险评估": "职业转型风险评估",
             };
             return nameMap[testName] || testName;
         },
@@ -291,19 +292,15 @@ export default {
 
         getTestEmoji(testName) {
             const name = testName.toLowerCase();
-            if (name.includes("疲倦") || name.includes("phq")) return "😔";
-            if (name.includes("紧张") || name.includes("gad")) return "😰";
-            if (name.includes("创伤") || name.includes("cpss")) return "😨";
-            if (name.includes("孤独") || name.includes("ucla")) return "😔";
-            if (name.includes("人际") || name.includes("its")) return "🤝";
-            if (
-                name.includes("睡眠") ||
-                name.includes("psqi") ||
-                name.includes("sds")
-            )
-                return "😴";
+            if (name.includes("定位") || name.includes("phq")) return "🎯";
+            if (name.includes("目标") || name.includes("gad")) return "✅";
+            if (name.includes("竞争") || name.includes("cpss")) return "💪";
+            if (name.includes("成长") || name.includes("ucla")) return "🌱";
+            if (name.includes("技能") || name.includes("its")) return "🔧";
+            if (name.includes("准备") || name.includes("psqi")) return "🚀";
+            if (name.includes("转型") || name.includes("sds")) return "⚖️";
             return "📊";
-        },
+        }
 
         formatDate(dateStr) {
             const date = new Date(dateStr);
