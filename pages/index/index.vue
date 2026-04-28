@@ -79,7 +79,7 @@ export default {
                     iconPath: "/static/custom-icon-1.png",
                     path: "/pages/phq7-test/index",
                     bgColor: "#E8F5E9",
-                    tag: "专业评估",
+                    tag: "职业定位",
                     gradient:
                         "linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%)",
                 },
@@ -90,7 +90,7 @@ export default {
                     iconPath: "/static/custom-icon-2.png",
                     path: "/pages/health/index",
                     bgColor: "#E3F2FD",
-                    tag: "知识分享",
+                    tag: "职场资讯",
                     gradient:
                         "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
                 },
@@ -101,7 +101,7 @@ export default {
                     iconPath: "/static/custom-icon-3.png",
                     path: "/pages/psychologist/index",
                     bgColor: "#FFF8E1",
-                    tag: "专业咨询",
+                    tag: "生涯规划",
                     gradient:
                         "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
                 },
@@ -112,7 +112,7 @@ export default {
                     iconPath: "/static/custom-icon-4.png",
                     path: "/pages/message/message",
                     bgColor: "#FCE4EC",
-                    tag: "智能陪伴",
+                    tag: "AI规划师",
                     gradient:
                         "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
                 },
@@ -229,8 +229,8 @@ export default {
     position: absolute;
     top: 16rpx;
     right: 16rpx;
-    background: rgba(255, 255, 255, 0.95);
-    color: #d4854f;
+    background: rgba(59, 130, 246, 0.15);
+    color: #ffffff;
     font-size: 20rpx;
     padding: 8rpx 16rpx;
     border-radius: 20rpx;
