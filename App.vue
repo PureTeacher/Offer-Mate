@@ -56,7 +56,7 @@ body {
     }
 
     .header {
-        background-color: #667eea;
+        background-color: #3b82f6;
         color: #ffffff;
     }
 
@@ -95,7 +95,7 @@ body {
             background-color: #cccccc;
 
             &.uni-switch-input-checked {
-                background-color: #667eea;
+                background-color: #3b82f6;
             }
         }
     }
@@ -201,7 +201,7 @@ page.theme-dark,
 
     .password-btn {
         background-color: #333333;
-        color: #667eea;
+        color: #3b82f6;
         border-color: #444444;
     }
 

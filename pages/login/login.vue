@@ -60,7 +60,7 @@
                 <u-button
                     type="primary"
                     text="登录"
-                    customStyle="margin-top: 50px; background: linear-gradient(135deg, #e07856 0%, #d4744e 100%)"
+                    customStyle="margin-top: 50px; background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%)"
                     shape="circle"
                     @click="submit"
                 />
@@ -281,13 +281,13 @@ export default {
     0%,
     100% {
         box-shadow:
-            0 0 0 0 rgba(224, 120, 86, 0.3),
-            0 0 20px rgba(224, 120, 86, 0.1);
+            0 0 0 0 rgba(59, 130, 246, 0.3),
+            0 0 20px rgba(59, 130, 246, 0.1);
     }
     50% {
         box-shadow:
-            0 0 0 8px rgba(224, 120, 86, 0),
-            0 0 30px rgba(224, 120, 86, 0.2);
+            0 0 0 8px rgba(59, 130, 246, 0),
+            0 0 30px rgba(59, 130, 246, 0.2);
     }
 }
 
@@ -343,7 +343,7 @@ export default {
             height: 400px;
             top: -100px;
             right: -100px;
-            background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
             animation:
                 fadeInSpin 1.2s cubic-bezier(0.34, 1.56, 0.64, 1),
                 rotateBg 20s infinite linear 1.2s;
@@ -354,7 +354,7 @@ export default {
             height: 300px;
             bottom: -80px;
             left: -80px;
-            background: linear-gradient(135deg, #d4744e 0%, #e07856 100%);
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
             animation:
                 fadeInSpin 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s,
                 rotateBgReverse 15s infinite linear 1.4s;
@@ -364,9 +364,9 @@ export default {
     .container {
         background: linear-gradient(
             to bottom,
-            #fff8f3 0%,
-            #ffe8d6 50%,
-            #fff5f0 100%
+            #f0f9ff 0%,
+            #e0f2fe 50%,
+            #f8fafc 100%
         );
         width: 100vw;
         padding-top: 10vh;
@@ -382,7 +382,7 @@ export default {
             justify-content: center;
             align-items: flex-end;
             width: 100vw;
-            filter: drop-shadow(0 4rpx 12rpx rgba(224, 120, 86, 0.15));
+            filter: drop-shadow(0 4rpx 12rpx rgba(59, 130, 246, 0.15));
             animation: slideInUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s
                 backwards;
 
@@ -408,7 +408,7 @@ export default {
         .title-text {
             font-size: 40px;
             font-weight: 700;
-            color: #d4744e;
+            color: #60a5fa;
             letter-spacing: 2rpx;
             animation: subtleShimmer 3s ease-in-out infinite;
         }
@@ -445,12 +445,12 @@ export default {
             }
 
             ::v-deep .u-btn {
-                background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+                background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
                 color: white;
                 font-weight: 700;
                 font-size: 18px;
                 border-radius: 24px;
-                box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25);
+                box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25);
                 border: none;
                 transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
                 position: relative;
@@ -473,13 +473,13 @@ export default {
 
                 &:active {
                     transform: scale(0.95);
-                    box-shadow: 0 12rpx 32rpx rgba(224, 120, 86, 0.35);
+                    box-shadow: 0 12rpx 32rpx rgba(59, 130, 246, 0.35);
                     animation: pulse 0.6s ease-out;
                 }
 
                 &:hover {
                     animation: bounce 0.6s ease-in-out;
-                    box-shadow: 0 12rpx 28rpx rgba(224, 120, 86, 0.3);
+                    box-shadow: 0 12rpx 28rpx rgba(59, 130, 246, 0.3);
                 }
             }
         }
@@ -496,7 +496,7 @@ export default {
 
             .footer-text {
                 font-size: 14px;
-                color: #d4744e;
+                color: #60a5fa;
                 padding: 15px;
                 font-weight: 600;
                 transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -510,14 +510,14 @@ export default {
                     left: 50%;
                     width: 0;
                     height: 2px;
-                    background: linear-gradient(90deg, #e07856, #d4744e);
+                    background: linear-gradient(90deg, #3b82f6, #60a5fa);
                     transform: translateX(-50%);
                     transition: width 0.3s ease-out;
                 }
 
                 &:hover {
                     transform: translateY(-3px);
-                    color: #c85a3a;
+                    color: #1e3a8a;
 
                     &::after {
                         width: 70%;
@@ -531,7 +531,7 @@ export default {
 
             .footer-divider {
                 font-size: 14px;
-                color: #d4744e;
+                color: #60a5fa;
                 margin: 0 5px;
                 opacity: 0.5;
                 animation: shimmer 2.5s ease-in-out infinite;

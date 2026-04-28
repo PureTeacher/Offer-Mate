@@ -13,7 +13,7 @@
                 <switch
                     :checked="settings.showPsychData"
                     @change="toggleSetting('showPsychData')"
-                    color="#e07856"
+                    color="#3b82f6"
                 />
             </view>
             <view class="settings-item">
@@ -24,7 +24,7 @@
                 <switch
                     :checked="settings.allowLocation"
                     @change="toggleSetting('allowLocation')"
-                    color="#e07856"
+                    color="#3b82f6"
                 />
             </view>
         </view>
@@ -40,7 +40,7 @@
                 <switch
                     :checked="settings.testReminder"
                     @change="toggleSetting('testReminder')"
-                    color="#e07856"
+                    color="#3b82f6"
                 />
             </view>
             <view class="settings-item">
@@ -51,7 +51,7 @@
                 <switch
                     :checked="settings.appointmentReminder"
                     @change="toggleSetting('appointmentReminder')"
-                    color="#e07856"
+                    color="#3b82f6"
                 />
             </view>
             <view class="settings-item">
@@ -62,7 +62,7 @@
                 <switch
                     :checked="settings.messageReminder"
                     @change="toggleSetting('messageReminder')"
-                    color="#e07856"
+                    color="#3b82f6"
                 />
             </view>
         </view>
@@ -303,9 +303,9 @@ export default {
 .settings-container {
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     min-height: 100vh;
     padding-bottom: 20upx;
@@ -385,12 +385,12 @@ export default {
 
             &.selected {
                 background-color: #1a2d4d;
-                border-color: #e07856;
+                border-color: #3b82f6;
             }
 
             .font-check {
                 background-color: #444444;
-                color: #e07856;
+                color: #3b82f6;
             }
         }
     }
@@ -409,14 +409,14 @@ export default {
     margin: 20upx 30upx;
     border-radius: 24upx;
     overflow: hidden;
-    box-shadow: 0 8upx 24upx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8upx 24upx rgba(59, 130, 246, 0.12);
     backdrop-filter: blur(20upx);
 
     .section-title {
         padding: 20upx 30upx;
         font-size: 28upx;
         font-weight: bold;
-        color: #d4744e;
+        color: #60a5fa;
         border-bottom: 1upx solid #f0f0f0;
     }
 }
@@ -513,8 +513,8 @@ export default {
     transition: all 0.3s;
 
     &.selected {
-        border-color: #e07856;
-        background-color: #fff0e8;
+        border-color: #3b82f6;
+        background-color: #f0f9ff;
     }
 
     .font-preview {
@@ -546,7 +546,7 @@ export default {
         top: 8upx;
         right: 8upx;
         font-size: 20upx;
-        color: #e07856;
+        color: #3b82f6;
         background-color: white;
         border-radius: 50%;
         width: 28upx;

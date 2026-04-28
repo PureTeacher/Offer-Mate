@@ -237,9 +237,9 @@ export default {
     min-height: 100vh;
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     padding-bottom: 120rpx;
 }
@@ -249,8 +249,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 30rpx;
-    background: linear-gradient(135deg, #e07856 0%, #d4744e 50%, #c85a3a 100%);
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25);
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #1e3a8a 100%);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25);
     border: none;
 
     .header-left {
@@ -277,7 +277,7 @@ export default {
     background: rgba(255, 255, 255, 0.95);
     margin: 20rpx;
     border-radius: 24rpx;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     backdrop-filter: blur(20rpx);
 
     .guide-emoji {
@@ -289,13 +289,13 @@ export default {
         flex: 1;
         background: linear-gradient(
             135deg,
-            rgba(224, 120, 86, 0.05) 0%,
-            rgba(212, 116, 78, 0.05) 100%
+            rgba(59, 130, 246, 0.05) 0%,
+            rgba(96, 165, 250, 0.05) 100%
         );
         padding: 20rpx;
         border-radius: 16rpx;
         position: relative;
-        border: 1rpx solid rgba(224, 120, 86, 0.1);
+        border: 1rpx solid rgba(59, 130, 246, 0.1);
 
         &::before {
             content: "";
@@ -304,7 +304,7 @@ export default {
             top: 30rpx;
             border-width: 10rpx;
             border-style: solid;
-            border-color: transparent rgba(224, 120, 86, 0.05) transparent
+            border-color: transparent rgba(59, 130, 246, 0.05) transparent
                 transparent;
         }
 
@@ -333,7 +333,7 @@ export default {
             opacity: 1;
             transform: scale(1.05);
             text {
-                color: #d4744e;
+                color: #60a5fa;
                 font-weight: 700;
             }
         }
@@ -360,7 +360,7 @@ export default {
     margin-bottom: 30rpx;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     display: flex;
     height: 200rpx;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -368,14 +368,14 @@ export default {
 
     &:hover {
         transform: translateY(-8rpx);
-        box-shadow: 0 16rpx 32rpx rgba(224, 120, 86, 0.18);
+        box-shadow: 0 16rpx 32rpx rgba(59, 130, 246, 0.18);
     }
 
     .card-badge {
         position: absolute;
         top: 20rpx;
         right: 20rpx;
-        background: #e07856;
+        background: #3b82f6;
         color: white;
         padding: 4rpx 12rpx;
         border-radius: 20rpx;
@@ -393,8 +393,8 @@ export default {
         font-size: 80rpx;
         background: linear-gradient(
             135deg,
-            rgba(224, 120, 86, 0.08) 0%,
-            rgba(224, 120, 86, 0.04) 100%
+            rgba(59, 130, 246, 0.08) 0%,
+            rgba(59, 130, 246, 0.04) 100%
         );
     }
 
@@ -437,16 +437,16 @@ export default {
     background: rgba(255, 255, 255, 0.95);
     margin: 40rpx 30rpx 0;
     border-radius: 24rpx;
-    color: #d4744e;
+    color: #60a5fa;
     font-size: 28rpx;
     font-weight: 600;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     transition: all 0.3s;
     backdrop-filter: blur(20rpx);
 
     &:hover {
         transform: translateY(-4rpx);
-        color: #e07856;
+        color: #3b82f6;
     }
 
     .emoji {
@@ -469,7 +469,7 @@ export default {
         font-size: 36rpx;
         font-weight: 700;
         margin-bottom: 30rpx;
-        color: #d4744e;
+        color: #60a5fa;
     }
 
     .popup-content {
@@ -484,13 +484,13 @@ export default {
             align-items: center;
             background: linear-gradient(
                 135deg,
-                rgba(224, 120, 86, 0.08) 0%,
-                rgba(224, 120, 86, 0.04) 100%
+                rgba(59, 130, 246, 0.08) 0%,
+                rgba(59, 130, 246, 0.04) 100%
             );
             padding: 20rpx;
             border-radius: 16rpx;
             margin-top: 30rpx;
-            border: 1rpx solid rgba(224, 120, 86, 0.2);
+            border: 1rpx solid rgba(59, 130, 246, 0.2);
 
             .emoji {
                 font-size: 36rpx;
@@ -500,18 +500,18 @@ export default {
             text {
                 flex: 1;
                 font-size: 26rpx;
-                color: #d4744e;
+                color: #60a5fa;
                 font-weight: 600;
             }
         }
     }
 
     .start-btn {
-        background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+        background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
         color: white;
         border-radius: 24rpx;
         font-weight: 700;
-        box-shadow: 0 8rpx 20rpx rgba(224, 120, 86, 0.25);
+        box-shadow: 0 8rpx 20rpx rgba(59, 130, 246, 0.25);
     }
 }
 </style>

@@ -474,9 +474,9 @@ export default {
     min-height: 100vh;
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     padding: 20px;
     display: flex;
@@ -508,7 +508,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
-    background: #d4744e;
+    background: #60a5fa;
     padding: 20px;
     border-radius: 15px;
 
@@ -579,7 +579,7 @@ export default {
         }
 
         &.active .step-number {
-            background: #d4744e;
+            background: #60a5fa;
             color: white;
         }
 
@@ -601,7 +601,7 @@ export default {
         }
 
         &.active {
-            background: #d4744e;
+            background: #60a5fa;
         }
     }
 }
@@ -656,7 +656,7 @@ export default {
         }
 
         .resend-link {
-            color: #d4744e;
+            color: #60a5fa;
             font-size: 12px;
             cursor: pointer;
         }
@@ -671,13 +671,13 @@ export default {
 
 /* 覆盖主按钮颜色 */
 ::v-deep .u-button--primary {
-    background-color: #d4744e !important;
-    border-color: #d4744e !important;
+    background-color: #60a5fa !important;
+    border-color: #60a5fa !important;
 }
 
 ::v-deep .u-button--primary:not(:disabled):not(.is-loading):active {
-    background-color: #c55a38 !important;
-    border-color: #c55a38 !important;
+    background-color: #1e40af !important;
+    border-color: #1e40af !important;
 }
 
 .success-section {

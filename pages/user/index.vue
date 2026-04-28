@@ -269,9 +269,9 @@ export default {
 .user-center {
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     min-height: 100vh;
     padding-bottom: 220rpx;
@@ -279,11 +279,11 @@ export default {
 
 /* 用户信息卡片 */
 .user-info-card {
-    background: linear-gradient(135deg, #e07856 0%, #d4744e 50%, #c85a3a 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #1e3a8a 100%);
     padding: 40rpx 30rpx;
     display: flex;
     align-items: center;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25);
 
     .avatar-container {
         margin-right: 30rpx;
@@ -334,7 +334,7 @@ export default {
     background: rgba(255, 255, 255, 0.95);
     margin: 24rpx 20rpx;
     border-radius: 24rpx;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     overflow: hidden;
     backdrop-filter: blur(20rpx);
 }
@@ -390,7 +390,7 @@ export default {
 
     .menu-arrow {
         font-size: 24rpx;
-        color: #d4744e;
+        color: #60a5fa;
         margin-left: 10rpx;
         opacity: 0.6;
         transition: all 0.3s ease;
@@ -408,18 +408,18 @@ export default {
     .logout-btn {
         width: 100%;
         height: 80rpx;
-        background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+        background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
         color: white;
         font-size: 28rpx;
         font-weight: 700;
         border: none;
         border-radius: 24rpx;
-        box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25);
+        box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25);
         transition: all 0.3s ease;
 
         &:active {
             transform: translateY(-2rpx);
-            box-shadow: 0 6rpx 20rpx rgba(245, 87, 108, 0.4);
+            box-shadow: 0 6rpx 20rpx rgba(59, 130, 246, 0.4);
         }
     }
 }

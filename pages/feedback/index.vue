@@ -211,9 +211,9 @@ export default {
 .feedback-page {
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     min-height: 100vh;
     padding-bottom: 30rpx;
@@ -278,7 +278,7 @@ export default {
     background: rgba(255, 255, 255, 0.9);
     display: flex;
     border-bottom: none;
-    box-shadow: 0 4rpx 12rpx rgba(224, 120, 86, 0.1);
+    box-shadow: 0 4rpx 12rpx rgba(59, 130, 246, 0.1);
 
     .dark-mode & {
         background: #2a2a2a;
@@ -301,12 +301,12 @@ export default {
     }
 
     &.active {
-        color: #e07856;
-        border-bottom-color: #e07856;
+        color: #3b82f6;
+        border-bottom-color: #3b82f6;
         font-weight: 700;
 
         .dark-mode & {
-            color: #e07856;
+            color: #3b82f6;
         }
     }
 }
@@ -321,7 +321,7 @@ export default {
     border-radius: 24rpx;
     padding: 25rpx 20rpx;
     margin-bottom: 20rpx;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     backdrop-filter: blur(20rpx);
 
     .dark-mode & {
@@ -349,8 +349,8 @@ export default {
 
 .type-option {
     padding: 15rpx;
-    background: rgba(224, 120, 86, 0.05);
-    border: 2rpx solid rgba(224, 120, 86, 0.2);
+    background: rgba(59, 130, 246, 0.05);
+    border: 2rpx solid rgba(59, 130, 246, 0.2);
     border-radius: 16rpx;
     text-align: center;
     font-size: 24rpx;
@@ -362,11 +362,11 @@ export default {
     }
 
     &.selected {
-        background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+        background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
         color: white;
-        border-color: #d4744e;
+        border-color: #60a5fa;
         font-weight: 700;
-        box-shadow: 0 6rpx 16rpx rgba(224, 120, 86, 0.25);
+        box-shadow: 0 6rpx 16rpx rgba(59, 130, 246, 0.25);
     }
 
     &:active {
@@ -378,11 +378,11 @@ export default {
     width: 100%;
     height: 80rpx;
     padding: 15rpx;
-    border: 1rpx solid rgba(224, 120, 86, 0.2);
+    border: 1rpx solid rgba(59, 130, 246, 0.2);
     border-radius: 16rpx;
     font-size: 26rpx;
     box-sizing: border-box;
-    background: rgba(224, 120, 86, 0.03);
+    background: rgba(59, 130, 246, 0.03);
     color: #333;
 
     .dark-mode & {
@@ -400,11 +400,11 @@ export default {
     width: 100%;
     min-height: 200rpx;
     padding: 15rpx;
-    border: 1rpx solid rgba(224, 120, 86, 0.2);
+    border: 1rpx solid rgba(59, 130, 246, 0.2);
     border-radius: 16rpx;
     font-size: 26rpx;
     box-sizing: border-box;
-    background: rgba(224, 120, 86, 0.03);
+    background: rgba(59, 130, 246, 0.03);
     resize: vertical;
 
     .dark-mode & {
@@ -429,7 +429,7 @@ export default {
 .submit-btn {
     width: 100%;
     padding: 18rpx;
-    background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
     color: white;
     border: none;
     border-radius: 24rpx;
@@ -437,7 +437,7 @@ export default {
     font-weight: 700;
     margin: 20rpx 0;
     transition: all 0.3s ease;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25);
 
     &:active {
         transform: scale(0.98);
@@ -448,7 +448,7 @@ export default {
 .footer-tips {
     display: block;
     text-align: center;
-    color: #d4744e;
+    color: #60a5fa;
     font-size: 22rpx;
     font-weight: 600;
 }
@@ -463,7 +463,7 @@ export default {
     border-radius: 24rpx;
     margin-bottom: 15rpx;
     overflow: hidden;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     backdrop-filter: blur(20rpx);
 
     .dark-mode & {
@@ -480,7 +480,7 @@ export default {
     transition: all 0.3s ease;
 
     &:active {
-        background: rgba(224, 120, 86, 0.05);
+        background: rgba(59, 130, 246, 0.05);
 
         .dark-mode & {
             background: #333;
@@ -501,7 +501,7 @@ export default {
 
 .faq-icon {
     font-size: 20rpx;
-    color: #e07856;
+    color: #3b82f6;
     transition: transform 0.3s ease;
     margin-left: 10rpx;
     font-weight: 700;

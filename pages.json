@@ -14,7 +14,7 @@
             "path": "pages/message/message",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -50,7 +50,7 @@
             "path": "pages/phq7-test/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -58,7 +58,7 @@
             "path": "pages/phq7-test/do-test",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -66,7 +66,7 @@
             "path": "pages/phq7-test/history",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -74,7 +74,7 @@
             "path": "pages/phq7-test/gad7",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -82,7 +82,7 @@
             "path": "pages/phq7-test/cpss",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -90,7 +90,7 @@
             "path": "pages/phq7-test/ucla",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -98,7 +98,7 @@
             "path": "pages/phq7-test/psqi",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -106,7 +106,7 @@
             "path": "pages/phq7-test/sds",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -114,7 +114,7 @@
             "path": "pages/phq7-test/its",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -122,7 +122,7 @@
             "path": "pages/health/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -130,7 +130,7 @@
             "path": "pages/psychologist/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -138,7 +138,7 @@
             "path": "pages/psychologist/appointment",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -146,7 +146,7 @@
             "path": "pages/psychologist/record",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -154,7 +154,7 @@
             "path": "pages/user/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -162,7 +162,7 @@
             "path": "pages/user/settings",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -170,7 +170,7 @@
             "path": "pages/user/account",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -178,7 +178,7 @@
             "path": "pages/user/change-password",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -186,7 +186,7 @@
             "path": "pages/help/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -194,7 +194,7 @@
             "path": "pages/feedback/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         },
@@ -202,7 +202,7 @@
             "path": "pages/about/index",
             "style": {
                 "navigationBarTitleText": "",
-                "navigationBarBackgroundColor": "#E8825B",
+                "navigationBarBackgroundColor": "#3b82f6",
                 "navigationBarTextStyle": "white"
             }
         }
@@ -216,7 +216,7 @@
     },
     "tabBar": {
         "color": "#999999",
-        "selectedColor": "#E8825B",
+        "selectedColor": "#3b82f6",
         "backgroundColor": "#ffffff",
         "borderStyle": "black",
         "list": [

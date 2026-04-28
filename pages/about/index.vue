@@ -77,9 +77,9 @@ export default {
 .about-page {
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     min-height: 100vh;
 }
@@ -93,7 +93,7 @@ export default {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24rpx;
     padding: 25rpx;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     backdrop-filter: blur(20rpx);
 }
 
@@ -101,7 +101,7 @@ export default {
     display: block;
     font-size: 28rpx;
     font-weight: 700;
-    color: #d4744e;
+    color: #60a5fa;
     margin-bottom: 20rpx;
 }
 
@@ -118,7 +118,7 @@ export default {
 
 .label {
     font-size: 22rpx;
-    color: #e8825b;
+    color: #60a5fa;
     font-weight: 500;
     margin-bottom: 5rpx;
 }

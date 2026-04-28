@@ -1,21 +1,21 @@
 /* uni.scss */
 @import "uview-ui/theme.scss";
 
-/* ============= 全局温馨主题颜色 ============= */
+/* ============= 全局清爽蓝色主题颜色 ============= */
 
 // 主要颜色
-$primary-color: #e07856; // 温暖的棕红色
-$primary-light: #ef9b7f; // 浅温暖棕色
-$primary-dark: #c85a3a; // 深温暖棕色
-$accent-color: #d4744e; // 强调色
+$primary-color: #3b82f6; // 现代蓝色
+$primary-light: #93c5fd; // 浅蓝色
+$primary-dark: #1e3a8a; // 深蓝色
+$accent-color: #60a5fa; // 强调色
 
 // 背景色
-$bg-light: #fff8f3; // 浅奶油色
-$bg-medium: #ffe8d6; // 中奶油色
-$bg-dark: #fff5f0; // 深奶油色
+$bg-light: #f0f9ff; // 冰蓝色
+$bg-medium: #e0f2fe; // 中蓝色
+$bg-dark: #f8fafc; // 灰蓝色
 
 // 阴影
-$shadow-warm: rgba(224, 120, 86, 0.12);
+$shadow-warm: rgba(59, 130, 246, 0.12);
 $shadow-normal: rgba(0, 0, 0, 0.08);
 
 // ============= 全局Header样式 =============
@@ -23,12 +23,12 @@ $shadow-normal: rgba(0, 0, 0, 0.08);
     .warm-header {
         background: linear-gradient(
             135deg,
-            #e07856 0%,
-            #d4744e 50%,
-            #c85a3a 100%
+            #3b82f6 0%,
+            #60a5fa 50%,
+            #1e3a8a 100%
         ) !important;
         color: #ffffff !important;
-        box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25) !important;
+        box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25) !important;
 
         .header-title,
         .header-subtitle {
@@ -45,7 +45,7 @@ $shadow-normal: rgba(0, 0, 0, 0.08);
         &:hover {
             transform: translateY(-8rpx) !important;
             box-shadow:
-                0 16rpx 32rpx rgba(224, 120, 86, 0.18),
+                0 16rpx 32rpx rgba(59, 130, 246, 0.18),
                 0 4rpx 12rpx $shadow-normal !important;
         }
     }
@@ -53,17 +53,17 @@ $shadow-normal: rgba(0, 0, 0, 0.08);
     .warm-bg {
         background: linear-gradient(
             to bottom,
-            #fff8f3 0%,
-            #ffe8d6 50%,
-            #fff5f0 100%
+            #f0f9ff 0%,
+            #e0f2fe 50%,
+            #f8fafc 100%
         ) !important;
     }
 
     .warm-btn {
         background: linear-gradient(
             135deg,
-            #e07856 0%,
-            #d4744e 100%
+            #3b82f6 0%,
+            #60a5fa 100%
         ) !important;
         color: #ffffff !important;
         border: none !important;
@@ -71,10 +71,10 @@ $shadow-normal: rgba(0, 0, 0, 0.08);
     }
 
     .warm-text-primary {
-        color: #e07856 !important;
+        color: #3b82f6 !important;
     }
 
     .warm-text-accent {
-        color: #d4744e !important;
+        color: #60a5fa !important;
     }
 }

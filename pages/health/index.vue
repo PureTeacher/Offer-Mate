@@ -405,9 +405,9 @@ export default {
     min-height: 100vh;
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     padding-bottom: 40rpx;
 }
@@ -467,10 +467,10 @@ export default {
         backdrop-filter: blur(10rpx);
 
         &.active {
-            background: linear-gradient(135deg, #e07856 0%, #d4744e 100%);
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
             transform: scale(1.05);
-            border-color: #d4744e;
-            box-shadow: 0 8rpx 20rpx rgba(224, 120, 86, 0.25);
+            border-color: #60a5fa;
+            box-shadow: 0 8rpx 20rpx rgba(59, 130, 246, 0.25);
 
             .category-text {
                 color: white;
@@ -485,7 +485,7 @@ export default {
 
         .category-text {
             font-size: 22rpx;
-            color: #d4744e;
+            color: #60a5fa;
             font-weight: 600;
         }
     }
@@ -527,19 +527,19 @@ export default {
     border-radius: 24rpx;
     padding: 32rpx;
     margin-bottom: 20rpx;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
     border: none;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     backdrop-filter: blur(20rpx);
 
     &:hover {
         transform: translateY(-8rpx);
-        box-shadow: 0 16rpx 32rpx rgba(224, 120, 86, 0.18);
+        box-shadow: 0 16rpx 32rpx rgba(59, 130, 246, 0.18);
     }
 
     &:active {
         transform: translateY(-4rpx) scale(0.99);
-        box-shadow: 0 12rpx 28rpx rgba(224, 120, 86, 0.15);
+        box-shadow: 0 12rpx 28rpx rgba(59, 130, 246, 0.15);
     }
 
     .card-header {

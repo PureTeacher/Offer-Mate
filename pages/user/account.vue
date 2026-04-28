@@ -980,9 +980,9 @@ export default {
     padding: 20rpx 0;
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     min-height: 100vh;
     font-size: 28rpx;
@@ -1010,7 +1010,7 @@ export default {
         font-size: 36rpx;
         font-weight: 700;
         margin-bottom: 10rpx;
-        color: #d4744e;
+        color: #60a5fa;
 
         .dark-mode & {
             color: #fff;
@@ -1033,7 +1033,7 @@ export default {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24rpx;
     padding: 30rpx;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.12);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.12);
 
     .dark-mode & {
         background-color: #2a2a2a;
@@ -1043,7 +1043,7 @@ export default {
         font-size: 28rpx;
         font-weight: 600;
         margin-bottom: 20rpx;
-        color: #d4744e;
+        color: #60a5fa;
 
         .dark-mode & {
             color: #fff;
@@ -1126,14 +1126,14 @@ export default {
 
     .edit-btn {
         padding: 8rpx 20rpx;
-        background-color: #e07856;
+        background-color: #3b82f6;
         color: #fff;
         border-radius: 6rpx;
         font-size: 24rpx;
         border: none;
 
         &:active {
-            background-color: #d4744e;
+            background-color: #60a5fa;
         }
     }
 
@@ -1389,7 +1389,7 @@ export default {
 
                     .send-code-btn {
                         padding: 12rpx 16rpx;
-                        background-color: #667eea;
+                        background-color: #3b82f6;
                         color: #fff;
                         border-radius: 6rpx;
                         font-size: 22rpx;
@@ -1438,11 +1438,11 @@ export default {
             }
 
             .btn-confirm {
-                background-color: #667eea;
+                background-color: #3b82f6;
                 color: #fff;
 
                 &:active {
-                    background-color: #5568d3;
+                    background-color: #60a5fa;
                 }
             }
         }

@@ -49,7 +49,7 @@ export default {
     left: 0;
     right: 0;
     height: 100rpx;
-    background-color: #d4744e;
+    background-color: #60a5fa;
     display: flex;
     justify-content: space-around;
     align-items: center;

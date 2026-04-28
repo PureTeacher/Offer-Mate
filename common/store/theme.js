@@ -114,7 +114,7 @@ class ThemeManager {
         sectionBackground: '#ffffff',
         borderColor: '#f0f0f0',
         descColor: '#999999',
-        navBackground: '#667eea',
+        navBackground: '#3b82f6',
         navText: '#ffffff',
       },
       dark: {
@@ -133,7 +133,7 @@ class ThemeManager {
         sectionBackground: '#ffffff',
         borderColor: '#f0f0f0',
         descColor: '#999999',
-        navBackground: '#667eea',
+        navBackground: '#3b82f6',
         navText: '#ffffff',
       },
     };

@@ -81,7 +81,7 @@ export default {
                     bgColor: "#E8F5E9",
                     tag: "专业评估",
                     gradient:
-                        "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                        "linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%)",
                 },
                 {
                     id: 2,
@@ -157,9 +157,9 @@ export default {
 .page-container {
     background: linear-gradient(
         to bottom,
-        #fff8f3 0%,
-        #ffe8d6 50%,
-        #fff5f0 100%
+        #f0f9ff 0%,
+        #e0f2fe 50%,
+        #f8fafc 100%
     );
     min-height: 100vh;
     height: 100vh;
@@ -239,17 +239,17 @@ export default {
     box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
 }
 
-/* Header 样式 - 更温馨的渐变 */
+/* Header 样式 - 清爽蓝色渐变 */
 .header {
     height: 140rpx;
     padding-top: var(--status-bar-height);
-    background: linear-gradient(135deg, #e07856 0%, #d4744e 50%, #c85a3a 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #1e3a8a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 10;
-    box-shadow: 0 8rpx 24rpx rgba(224, 120, 86, 0.25);
+    box-shadow: 0 8rpx 24rpx rgba(59, 130, 246, 0.25);
     overflow: hidden;
 
     &::before {
@@ -343,7 +343,7 @@ export default {
     display: block;
     font-size: 28rpx;
     font-weight: 600;
-    color: #d4744e;
+    color: #60a5fa;
     margin-bottom: 12rpx;
     letter-spacing: 0.5rpx;
 }
@@ -351,7 +351,7 @@ export default {
 .greeting-line {
     width: 60rpx;
     height: 3rpx;
-    background: linear-gradient(90deg, #e07856, #d4744e);
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
     border-radius: 2rpx;
 }
 
@@ -368,7 +368,7 @@ export default {
     border-radius: 24rpx;
     overflow: hidden;
     box-shadow:
-        0 8rpx 24rpx rgba(224, 120, 86, 0.12),
+        0 8rpx 24rpx rgba(59, 130, 246, 0.12),
         0 2rpx 8rpx rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     min-height: 310rpx;
@@ -392,13 +392,13 @@ export default {
     &:hover {
         transform: translateY(-8rpx);
         box-shadow:
-            0 16rpx 32rpx rgba(224, 120, 86, 0.18),
+            0 16rpx 32rpx rgba(59, 130, 246, 0.18),
             0 4rpx 12rpx rgba(0, 0, 0, 0.12);
     }
 
     &:active {
         transform: translateY(-4rpx) scale(0.99);
-        box-shadow: 0 12rpx 28rpx rgba(224, 120, 86, 0.15);
+        box-shadow: 0 12rpx 28rpx rgba(59, 130, 246, 0.15);
     }
 }
 
@@ -458,7 +458,7 @@ export default {
 
 .card-arrow {
     font-size: 28rpx;
-    color: #d4744e;
+    color: #60a5fa;
     font-weight: 600;
     opacity: 0.7;
     transition: all 0.3s ease;
